@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('WhatsApp\ Image\ 2021-09-21\ at\ 11.45.59\ PM.jpeg');
+}
+
+.form-register {
+    width: 400px;
+    background-image: url('WhatsApp\ Image\ 2021-09-21\ at\ 11.45.59\ PM.jpeg') 100%;
+    /*background: #7B3950;*/
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000; /*sombra*/
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #000032;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.form-register a{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register a:hover {
+    color:white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 47%;
+    background: #000032;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 7px 13px 37px rgb(255, 252, 252)
+
+}
