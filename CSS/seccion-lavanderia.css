@@ -145,3 +145,61 @@
 
 
 
+/*contenedor de categorias*/
+.texto h3{
+  text-align: center;
+  font-family: sans-serif;
+}
+.titulo{
+  text-align: left;
+  font-family: sans-serif;
+  margin: 50px;
+  font-size: 18px;
+  transform: translate(10%, 0%);
+  text-decoration: underline;
+   text-decoration-color: #e9a963;
+   font-weight: lighter;
+}
+
+.contener{
+    display: inline-block;
+    height: 100px;
+    width:100px;
+    box-shadow:0 0 0px #111 ;
+    margin: 0px 45px;
+}
+
+.card img{
+    display: center;
+    margin: auto;
+    display: block;
+}
+.contener .TARJETA1 img{
+    height: 120px;
+    width: 120px;
+}
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+.contener .TARJETA2 img{
+    height: 120px;
+    width: 120px;
+}
+.contener .TARJETA3 img{
+    height: 120px;
+    width: 120px;
+}
+.texto1{
+    height: 80px;
+    width: 100%;
+}
+.texto1 h1{
+    font-family: sans-serif;
+    font-size: 1.05em;
+    text-align: center;
+    color: #e9a93e;
+    margin-bottom: 60px;
+}
