@@ -17,11 +17,6 @@ button{
 }
 
 .page-nav{
-    background-color: #2196f3
-    border: 1px solid black;
-}
-
-.page-nav{
     background-color: #2196f3;
     border: 1px solid black;
     position: relative;

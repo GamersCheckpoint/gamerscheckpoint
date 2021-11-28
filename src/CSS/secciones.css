@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+
+
 .slyder{
     width: 95%;
     margin: auto;
@@ -387,7 +389,3 @@ up,p {
     
 }
 
-.laundry > img{
-    max-width: 100%;
-    height: auto;
-}
