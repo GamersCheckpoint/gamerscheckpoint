@@ -76,8 +76,14 @@ body{
 /*comentarios*/
 .opiniones{
     border-top: 5px solid #666;
-    padding-left: 5%;
-    padding-right: 5%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.opiniones input{
+    max-width: 200px;
+    color: #666;
 }
 label{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
