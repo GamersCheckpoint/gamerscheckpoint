@@ -33,6 +33,18 @@ router.get('/seccion-lavanderia.ejs', (req, res) =>{
     res.render('seccion-lavanderia')
 })
 
+router.get('/lg_empresa.ejs', (req, res) =>{
+    res.render('lg_empresa')
+})
+
+router.get('/SAMSUNG_empresa.ejs', (req, res) =>{
+    res.render('SAMSUNG_empresa')
+})
+
+router.get('/LOGIN.ejs', (req, res) =>{
+    res.render('LOGIN')
+})
+
 /*Agregar info a la BD*/
 router.post('/agregarusuario', (req, res)=>{
     client.connect(async (err) =>{
