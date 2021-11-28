@@ -2,9 +2,9 @@ const path = require('path')
 const express =require('express')
 const logger = require('morgan')
 const bodyParse = require('body-parser')
-const app = express();
+const app = express()
 const indexRoutes = require('./src/routes/index')
-const productRoutes = require('./src/routes/product01')
+
 
 app.set('port', process.env.PORT ||3000)
 app.set('views', path.join(__dirname, 'src/views'))

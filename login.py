@@ -24,7 +24,6 @@ password = input('Ingrese su contraseña: ')
 #Guardamos la información
 unCliente['nombre'] = nombre
 unCliente['apellido'] = apellido
-unCliente['edad'] = edad
 unCliente['sexo'] = sexo
 unCliente['nacimiento'] = nacimiento
 unCliente['correo'] = correo
