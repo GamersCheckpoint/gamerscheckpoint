@@ -45,6 +45,10 @@ router.get('/LOGIN.ejs', (req, res) =>{
     res.render('LOGIN')
 })
 
+router.get('/extraerDatosUsuario', (req, res) =>{
+    res.render('extraerDatosUsuario')
+})
+
 /*Agregar info a la BD*/
 router.post('/agregarusuario', (req, res)=>{
     client.connect(async (err) =>{
@@ -70,14 +74,34 @@ router.post('/direccionventa', (req, res) =>{
         }
     })
 })
-
+/**Extraer datos de DB */
 router.post('/extraerDatosUsuario', (req, res) =>{
     client.connect(async (err) =>{
         if (!err){
             const collection =client.db("db_gcp").collection("users")
             collection.find().toArray((err, result)=>{
                 if(!err){
-                    res.send(result)
+                    //res.send(result)
+                    res.render('extraerDatosUsuario', {datos:result})
+                }else{
+                res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
+                }
+            })
+        }else{
+            res.send("resultado:[{'respuesta':'Error al conectar a la base de datos'},{'mensaje':" + err +"}]")
+        }
+    })
+})
+
+router.post('/extraerDatoDeUnUsuario', (req, res) =>{
+    var nombreLocal = req.body.nombre;
+    client.connect(async (err) =>{
+        if (!err){
+            const collection =client.db("db_gcp").collection("users")
+            collection.find({nombre:{$eq:nombreLocal}}).toArray((err, result)=>{
+                if(!err){
+                    //res.send(result)
+                    res.render('extraerDatosUsuario', {datos:result})
                 }else{
                 res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
                 }
