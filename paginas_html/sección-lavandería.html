@@ -53,137 +53,36 @@
 </header>
 
 <section id="titulo_lavan">
-  <H1>CATALOGO GAMER'S</H1>
-
-
-
-    <!-- inicio de categoriasa -->
-   <section class="section">
-    <div class="container">
-     <header class="section-header text-center text-bold">
-       <h3>CATEGORIA > mujer</h3>
-     </header>
-     <div class="row">
- 
-     <div class="contener">
-              <div class="TARJETA1">
- 
-            <img src="IMAGEN/SILLA 1.1.jpg" class='imgRedonda' /></h3></a> 
-              </div>
-              <div class="texto1">
-                  <h1>SILLAS GAMERS</h1>
- 
-              </div>
-          </div>
- 
-         <div class="contener">
-              <div class="TARJETA2">
-                  <img src="IMAGEN/TECLADO.png" class='imgRedonda' />
-              </div>
-              <div class="texto1">
-                  <h1>TECLADO GAMERS/h1>
- 
-              </div>
-          </div>
- 
-         <div class="contener">
-              <div class="TARJETA3">
-                  <img src="IMAGEN/polo_fn.png" class='imgRedonda' />
-              </div>
-              <div class="texto1">
-                  <h1>POLOS GAMERS</h1>
- 
-      </div>
-          </div>
-       <div class="contener ">
-              <div class="TARJETA1">
-               <img src="IMAGEN/figura_acción.png" class='imgRedonda' />
- 
-              </div>
-              <div class="texto1">
-                  <h1>FIGURAS  DE ACCION </h1>
- 
-              </div>
-          </div>
- 
-
- 
-      </div>
-          </div>
-        </div>
-     </div>
-   </section>
- 
-    <!--
-      </section> 
-<section id="aside_lavand">
-  <div class="clasificacion_filtro">
-    <h3>ARTICULOS</h3>
-  </div>
-  <input type="radio" name="filtro" id="filtro-all" checked>
-  <label for="todo" id="filtro-all__text">TODO</label>
-  <input type="radio" name="filtro" id="filtro-LG">
-  <label for="lg" id="filtro-LG__text">SILLAS GAMER</label>
-  <input type="radio" name="filtro" id="filtro-SAMSUNG">
-  <label for="san" id="filtro-SAMSUNG__text">TECLADO GAMER</label>
-  <input type="radio" name="filtro" id="filtro-SAMSUNG">
-  <label for="san" id="filtro-SAMSUNG__text">POLO GAMER</label>
-  <input type="radio" name="filtro" id="filtro-SAMSUNG">
-  <label for="san" id="filtro-SAMSUNG__text">FIGURAS DE ACCION GAMER</label>
-  <div id="aside_lavand_prodc_lg">
-      
-      
-      <div class="prodc-lg">
-      <div class="main-lavan-prodc-img">
-        <a href="product01.html"> 
-        <img src="/IMAGEN/SILLA 1.1.jpg" alt="silla_gamer" height="250px" width="250px"></a>
-      </div>
-      <div class="division_imagen_LG">
-        <section class="seccion">
-          <h1>SILLAS GAMER</h1>
-          <p>Disponible para despacho</p>
-          <p>Disponible para retiro </p>
-        </section> 
-      </div>
+  <div class="page-nav">
+    <h1>CATÁLOGO GAMER'S</h1>
+    <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+</div>
+<div class="page-content">
+    <div class="product-container">
+        <h3>Nombre</h3>
+        <a href="product01.html"></a> <img src="IMAGEN/Product-1.jpg" alt="Silla Gamer">
+        <h1>S/.50</h1>
+        <button class="button-add" onclick="add('Product-1',50)">COMPRAR</button>
     </div>
-    <div class="prodc-lg">
-      <div class="main-lavan-prodc-img">
-        <a href="product02.html"><img src="/IMAGEN/TECLADO_paquete.png" alt="lavadora LG" height="250px" width="250px"></a>
-      </div>
-      <div class="division_imagen_LG">
-        <section class="seccion">
-          <H1>TECLADOS GAMER</H1>
-          <p>Disponible para despacho</p>
-          <p>Disponible para retiro </p>
-        </section> 
-      </div>
+    <div class="product-container">
+        <h3>Nombre</h3>
+        <a href="product02.html"></a><img src="IMAGEN/Product-2.jpg" alt="Teclado Gamer">
+        <h1>S/.250</h1>
+        <button class="button-add" onclick="add('Product-2',250)">COMPRAR</button>
     </div>
-  </div>
-  <div id="aside_lavand_prodc_smsng">
-    <div class="prodc-smsng">
-      <div class="main-lavan-prodc-img">
-        <a href="product03.html"><img src="/IMAGEN/polo_roblox.jpg" alt="lavadora LG" height="250px" width="250px"></a>
-      </div>
-      <section class="seccion">
-        <H1>POLO GAMER</H1>
-        <p>Disponible para despacho</p>
-        <p>Disponible para retiro </p>
-      </section>
+    <div class="product-container">
+        <h3>Nombre</h3>
+        <a href="product03.html"></a><img src="IMAGEN/Product-3.jpg" alt="">
+        <h1>S/.300</h1>
+        <button class="button-add" onclick="add('Product-3',300)">COMPRAR</button>
     </div>
-    <div class="prodc-smsng">
-      <div class="main-lavan-prodc-img">
-        <a href="product02.html"><img src="/IMAGEN/figura_accion_pq.png" alt="lavadora LG" height="250px" width="250px"></a>        </div>
-      <div class="division_imagen_LG">
-        <section class="seccion">
-          <H1>FIGURAS DE ACCIÓN GAMER</H1>
-          <p>Disponible para despacho</p>
-          <p>Disponible para retiro </p>
-        </section> 
-      </div>
+    <div class="product-container">
+        <h3>Nombre</h3>
+        <a href="product04.html"></a><img src="IMAGEN/Product-4.jpg" alt="">
+        <h1>S/.350</h1>
+        <button class="button-add" onclick="add('Product-3',350)">COMPRAR</button>
     </div>
-  </div>
-</section>
--->
+</div>
 <section id="main-lavan">
   
 </section>
