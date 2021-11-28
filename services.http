@@ -1,0 +1,13 @@
+POST http://localhost:3000/direccionventa
+Content-Type: application/json
+
+{
+    "nombre":"Anacleto",
+    "apellidos":"Pancracio",
+    "provincia":"Lima",
+    "distrito":"Miraflores",
+    "calle":"Los Lureles",
+    "numero":"450",
+    "interior":"69",
+    "telefonos - Separados por una coma (,)":["999888777","989898787"]
+}
