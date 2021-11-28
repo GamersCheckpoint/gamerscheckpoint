@@ -9,7 +9,7 @@
 <body>
     <h1>Datos de Usuarios</h1>
     <hr>
-    <form action="/extraerDatosUsuario" method="post">
+    <form action="/extraerDatoDeUnUsuario" method="post">
         <label>Extraer Datos de Usuario</label>
         <input type="text" placeholder="Nombre de Usuario" id="nombre" name="nombre"/>
         <button type="submit">Extraer</button>
@@ -18,7 +18,10 @@
     <ul>
     <% if(typeof datos !== 'undefined'){ %>
         <% for (index in datos){ %>
-            <li><%= datos[index].nombre %> <%= datos[index].apellido %></li>
+            <li><p>Nombres y Apellidos: <%= datos[index].nombre %> <%= datos[index].apellido %></p></li>
+            <li><p>Fecha de Nacimiento (dd/mm/aaaa): <%= datos[index].nacimiento %></p></li>
+            <li><p>Sexo F/M: <%= datos[index].sexo %></p></li>
+            <li><p>Correo Electrónico: <%= datos[index].correo %></p></li>
         <% } %>
     <% } %>
     </ul>
