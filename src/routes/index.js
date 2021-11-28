@@ -48,17 +48,44 @@ router.get('/LOGIN.ejs', (req, res) =>{
 /*Agregar info a la BD*/
 router.post('/agregarusuario', (req, res)=>{
     client.connect(async (err) =>{
-        const collection = client.db("db_gcp").collection("users")
+        if(!err){
+            const collection = client.db("db_gcp").collection("users")
         collection.insertOne(req.body)
+        res.send("resultado:[{'respuesta':'OK'}]")
+        }else{
+            res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
+        }
+        
     })
 })
 
 router.post('/direccionventa', (req, res) =>{
     client.connect(async (err) =>{
+        if(!err){
         const collection = client.db("db_gcp").collection("ventadirec")
         collection.insertOne(req.body)
+        res.send("resultado:[{'respuesta':'OK'}]")
+        }else{
+            res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
+        }
     })
 })
 
+router.post('/extraerDatosUsuario', (req, res) =>{
+    client.connect(async (err) =>{
+        if (!err){
+            const collection =client.db("db_gcp").collection("users")
+            collection.find().toArray((err, result)=>{
+                if(!err){
+                    res.send(result)
+                }else{
+                res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
+                }
+            })
+        }else{
+            res.send("resultado:[{'respuesta':'Error al conectar a la base de datos'},{'mensaje':" + err +"}]")
+        }
+    })
+})
 
 module.exports = router;
