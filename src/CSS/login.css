@@ -14,11 +14,15 @@ body{
     /*background: #7B3950;*/
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     box-shadow: 7px 13px 37px #000; /*sombra*/
+}
+
+.form-register p{
+    color: rgb(255, 255, 255);
 }
 
 .form-register h4{
@@ -29,12 +33,14 @@ body{
 
 .controls {
     width: 100%;
+    height: 40px;
     background: #000032;
     padding: 10px;
     border-radius: 4px;
     border-bottom: 16px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
+    color: rgb(223, 223, 223);
     font-size: 18px;
 }
 
@@ -46,12 +52,13 @@ body{
 }
 
 .form-register a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
 .form-register a:hover {
-    color:white;
+    color: rgb(0, 0, 0);
+    text-decoration-style: dotted;
     text-decoration: underline;
 }
 
