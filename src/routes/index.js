@@ -41,7 +41,7 @@ router.get('/SAMSUNG_empresa.ejs', (req, res) =>{
     res.render('SAMSUNG_empresa')
 })
 
-router.get('/login.ejs', (req, res) =>{
+router.get('/LOGIN.ejs', (req, res) =>{
     res.render('login')
 })
 
