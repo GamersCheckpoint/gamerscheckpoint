@@ -41,6 +41,10 @@
     100% {margin-left: -300%;}
 } 
 
+.P-F{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .contenedor {
 
     display: flex;

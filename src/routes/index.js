@@ -29,8 +29,8 @@ router.get('/seccion-empresas.ejs', (req, res) =>{
     res.render('seccion-empresas')
 })
 
-router.get('/seccion-lavanderia.ejs', (req, res) =>{
-    res.render('seccion-lavanderia')
+router.get('/conocenos.ejs', (req, res) =>{
+    res.render('conocenos')
 })
 
 router.get('/lg_empresa.ejs', (req, res) =>{
@@ -41,8 +41,8 @@ router.get('/SAMSUNG_empresa.ejs', (req, res) =>{
     res.render('SAMSUNG_empresa')
 })
 
-router.get('/LOGIN.ejs', (req, res) =>{
-    res.render('LOGIN')
+router.get('/login.ejs', (req, res) =>{
+    res.render('login')
 })
 
 router.get('/extraerDatosUsuario', (req, res) =>{

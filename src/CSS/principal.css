@@ -6,7 +6,7 @@
 
 body{
     size: 100%;
-    background-image: url('WhatsApp\ Image\ 2021-09-21\ at\ 11.45.59\ PM.jpeg');
+    background-image: url('fondofinal.jpeg');
     background-size: 400% 300%;
     animation: BgGradient 20s ease infinite;
     
@@ -63,7 +63,7 @@ nav{
     margin: 16px 0;
     align-items: center;
     max-width: 500px;
-    background: ##140026d5;
+    background: #140026d5;
     box-shadow: 7px 13px 37px #9217A4   
 }
 
@@ -121,25 +121,6 @@ nav button{
     visibility: visible;
     opacity: 1;
 
-}
-
-
-
-.carrito{
-    flex: 5%;
-    height: 70px;
-    width: 175px;
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 65px;
-    padding-top: 10px;
-    padding-left: 8px;
-    padding-right: 10px;
-    border: 0.2em;
-    border-style: solid;
-    border-color: #FFFFFF
-    color: #000000;
-    font-size: small;
 }
 
 /*victor*/
