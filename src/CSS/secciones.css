@@ -5,6 +5,13 @@
 
 
 
+
+
+
+
+
+
+/*Pagina index.ejs*/
 .slyder{
     width: 95%;
     margin: auto;
@@ -263,58 +270,61 @@ up,p {
 
 }
 
-
-.Contenedor_Empresas {
-
-    margin-top: 5px;
-
-    background-image: url(/IMAGEN/fondo_empresas.jpg);
-    background-size: cover;
-    border: 5px solid #0000;
-    
-    height: 95%;
-    width: 100%;
-}
-
-.Texto {
-    background-color: #fff;
-    color: #000;
-
-    height: 315px;
-    
-    width: 600px;
-
-    text-align: center;
-
+/*carrucel*/
+.carrucel{
+    width: 400px;
     margin: auto;
-    
-    margin-top: 8%;
-    margin-bottom: 8%;
+    overflow: hidden;
+}
+
+.carrucel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate ease-out;
+}
+
+.carrucel li{
+    width: 400px;
+    list-style: none;
+}
+
+.carrucel img{
+    width: 100%;
+    object-fit: cover;
+}
+.marcas-cl{
+    min-height: 200px;
+    margin: auto;
+}
+
+.marcas-cl h1{
+    font-size: 40px;
+    font-family: cursive, Calibri, sans-serif;
+    margin-bottom: 30px;
+    color: white;
     text-align: center;
 }
 
-.division1 h2 {
-    padding: auto;
-    padding-top: 5%;
-    font-family: sans-serif;
-    font-size: 30px;
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.division2 h1{
 
-    font-family: sans-serif;
-    font-size: 80px ;
-}
 
-.division3{
 
-    font-family: sans-serif;
-    font-size: 15px;
 
-    padding: auto;    
-}
+/*CATALOGO GAMER*/
 
-  /*secion de productos*/
+
+
+
+
+
+
+/*secion de productos*/
 
 #tabladecap{
     display: flex;
@@ -364,32 +374,6 @@ up,p {
 }
 #tr_cond > a{
     color: red;
-    
-}
-
-/*aqui esta el css del espacio de los anunciós */
-.S-A{
-    display: block;
-    margin-top: 10px;
-}
-.prueba{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-}
-.laundry{
-    margin: auto;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: auto;
-    padding-left: 10px;
-    text-align: justify;
-}
-.pag{
-    width: 150px;
-    height: 185px;
     
 }
 
