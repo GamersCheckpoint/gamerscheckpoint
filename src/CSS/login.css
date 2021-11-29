@@ -5,12 +5,12 @@
 }
 
 body{
-    background-image: url('WhatsApp\ Image\ 2021-09-21\ at\ 11.45.59\ PM.jpeg');
+    background-image: url('fondofinal.jpeg');
 }
 
 .form-register {
     width: 400px;
-    background-image: url('WhatsApp\ Image\ 2021-09-21\ at\ 11.45.59\ PM.jpeg') 100%;
+    background-image: url('fondofinal.jpeg') 100%;
     /*background: #7B3950;*/
     padding: 30px;
     margin: auto;
