@@ -292,59 +292,7 @@ up,p {
     margin-left: 15px;
     margin-right: 15px;
 }
-.bar4x4_5 {
-    flex: 5%;
-    width: 190px;
-    height: 170px;
-    background-color: #ffffff;
-  
-    display: flex;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.bar4x4_6 {
-    flex: 5%;
-    width: 190px;
-    height: 170px;
-    background-color: #ffffff;
-  
-    display: flex;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.bar4x4_7 {
-    flex: 5%;
-    width: 190px;
-    height: 170px;
-    background-color: #ffffff;
-  
-    display: flex;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.bar4x4_8 {
-    flex: 5%;
-    width: 190px;
-    height: 170px;
-    background-color: #ffffff;
-  
-    display: flex;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-  
+
 .contenedor2 ul {
     flex: 50%;
     list-style: none;
@@ -429,82 +377,6 @@ up,p {
     padding-right: 30px;
   
 }
-
-.favimg5 {
-    
-    width: 165px;
-  
-    padding-top: 15px;
-    padding-left: 5px;
-  
-}
-  
-.textin5 {
-    height: 170px;
-    width: 145px;
-    font-size: 13px;
-    font-family: Helvetica;
-  
-    padding-top: 60px;
-    padding-right: 30px;
-  
-}
-.favimg6 {
-    
-    width: 165px;
-  
-    padding-top: 15px;
-    padding-left: 5px;
-  
-}
-  
-.textin6 {
-    height: 170px;
-    width: 145px;
-    font-size: 13px;
-    font-family: Helvetica;
-  
-    padding-top: 60px;
-    padding-right: 30px;
-  
-}
-.favimg7 {
-    
-    width: 165px;
-  
-    padding-top: 15px;
-    padding-left: 5px;
-  
-}
-  
-.textin7 {
-    height: 170px;
-    width: 145px;
-    font-size: 13px;
-    font-family: Helvetica;
-  
-    padding-top: 60px;
-    padding-right: 30px;
-  
-}
-.favimg8 {
-    
-    width: 165px;
-  
-    padding-top: 15px;
-    padding-left: 5px;
-  
-}
-  
-.textin8 {
-    height: 170px;
-    width: 145px;
-    font-size: 13px;
-    font-family: Helvetica;
-  
-    padding-top: 60px;
-    padding-right: 30px;
-  
 
 /*  AQUÍ SE EJECUTA EL ESTILO DE FICHA TECNICA Y TECNOLOGIA */
 
