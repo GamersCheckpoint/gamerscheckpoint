@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/CSS/principal.css">
+    <!--<link rel="stylesheet" href="CSS/secciones.css">-->
+    <link rel="stylesheet" href="/src/CSS/dis_empresas.css">
+    <link rel="shortcut icon" href="/src/IMAGEN/ICONO_CP.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+    <title>Electro Hogar</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="JS/comentarios.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBZ5OgGkaqnazFsYF0fEwIlViYwW0yzTxk",
+        authDomain: "comentarioslav.firebaseapp.com",
+        projectId: "comentarioslav",
+        storageBucket: "comentarioslav.appspot.com",
+        messagingSenderId: "629422068566",
+        appId: "1:629422068566:web:e919ffbcdab2a6a895fcf7",
+        measurementId: "G-W4PNZL2SBE"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    
+
+</head>
+<body>
+    <header class="dtop1">
+    <div class="cabecera1">
+        <div class="cabecera-izq">
+            <img src="IMAGEN/youtube.png" alt="Youtube" width="20px"> &nbsp;
+            <img src="IMAGEN/whatsapp.png" alt="whats App" width="20px">&nbsp;
+            <img src="IMAGEN/facebook.png" alt="FaceBook" width="20px">&nbsp;
+            <img src="IMAGEN/twitter.png" alt="Twitter" width="20px">&nbsp;
+            <img src="IMAGEN/instagram.png" alt="Instagram" width="20px"> 
+        </div>
+        <div class="cabecera-centro"> 
+            <p>SABEMOS QUE ENCONTRARÁS LO QUE ESTAS BUSCANDO ;)</p>
+        </div>
+        <form>
+        <div class="cabecera-der">   
+            <button style="font-size: 11px; height: 22px; width: 90px;">MI CUENTA</button></a>
+            &nbsp;&nbsp;
+            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar..." style="width: 100px;">
+        </div> 
+        </form>   
+    </div>
+    <nav id="" class="navegacion">
+        <div class="logo-texto">
+            <img src="/src/IMAGEN/LOGO_3.jpg" alt="logo" height="140px" width="280px">
+        </div>
+        <ul id="" class="menu">
+          <li><a href="index.html"><b>HOME</b></a></li> |
+          <li><a href="sección-lavandería.html"><b>LAVADO Y LIMPIEZA</b></a></li> |
+          <li><a href="#"><b>MARCAS</b></a> 
+            <ul class="submenu">
+            <li><a href="lg_empresa.html">LG</a></li>
+              <li><a href="sección-empresas.html">SAMSUNG</a></li>
+            </ul>
+          </li>
+       </ul>
+    </nav>
+</header> 
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0" nonce="JRki7fNq"></script>
+    <article class="empresas">
+        <div class="multimedia">
+            
+            <div>
+                <h1>SOY UNA CITA ORIGINAL</h1>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="sugerencia">
+            <div>
+                <h3><B>MISIÓN</B></h3>
+                <p>El obejitivo de nuestro e-commerce es dedicar una atención personalizada, brindando
+                    productos y accesorios de buena calidad a un precio razanoble para los gamers.</p>
+            </div>
+            <div>
+                <h3><b>VISIÓN</b></h3>
+                <p>
+                    Creemos que existimos para brindar excelentes productos y enfocarnos en la innovación
+                    desde lo más simple a lo más complejo. Fijando como meta traspasar fronteras y competir
+                    con el mercado internacional.
+                </p>
+            </div>
+            <br><br>
+        </div>
+        <div class="opiniones" onload="javascript:cargarInicio()">
+            <br><br><br>
+            <h1>CONTÁCTAME</h1>
+            <br><br>
+            <i>500 Terry Francois Street, San Francisco, CA 94158 <br> info@mysite.com | Tel: 123-456-7890</i>
+            <br><br><br>
+            <form action="" id="MiComentario">
+                <label for="nombre opiniones"></label>
+                <br>
+                <input type="text" value="Nombre" name="nombre" id="nombre"><br>
+                <br>
+                <input type="text" value="Email" name="nombre" id="nombre"><br>
+                <br>
+                <input type="text" value="Asunto" name="nombre" id="nombre"><br>
+                <br>
+                <textarea name="opiniones" id="opiniones" name="Escribe tu mensaje aqui ..." cols="45%" rows="5"></textarea><br>
+            </form>
+            <br>
+            <div >
+             <button class="boton_subir" type="submit" value="Enviar">Enviar</button>
+            </div>
+            <br>
+        </div>
+    </article>
+
+    <footer>
+        <div class="monsa">
+            <address>
+                <div class="info-contacto">
+                    <p>GRUPO 1 , ELECTRO-HOGAR S.A. <br>
+                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">electrohogar@electrohogar.com</a><br>
+                    Calle Arenas 230 , Villa Humedales - Indonesia <br>
+                    +62 66518-9214</p>
+                </div>
+                <div class="botoncontactanos">
+                    <button><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" style="text-decoration: none;">CONTACTANOS</a></button>
+                </div>
+            </address>
+        </div>
+        <div class="certus">
+            <span class="registro">
+                Todos los derechos reservados ELECTRO-HOGAR S.A. 2019
+            </span>
+        </div>
+    </footer> 
+</body>
+</html>

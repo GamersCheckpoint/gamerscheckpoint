@@ -6,9 +6,9 @@
 
 body{
     size: 100%;
-    background: linear-gradient(150deg, #ff9898,  #cdf4ff, #93a4f9);
+    background-image: url('fondofinal.jpeg');
     background-size: 400% 300%;
-    animation: BgGradient 5s ease infinite;
+    animation: BgGradient 20s ease infinite;
     
 }
 
@@ -19,74 +19,75 @@ body{
 }
  
 .cabecera1{
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
+    margin-bottom: 5px;
+    padding-top: 15px;
 
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-
-    padding-bottom: 0%;
-
-    height: 20px;
-    width: 100%;
-    display: flex;
-}
-.cabecera-izq{
-    flex: 10%;
-    height: 30px;
-    padding-top: 5px;
-    padding-left: 30px;
- }
-.cabecera-centro{
-    flex: 30%;
-    height: 30px;
-    width: 300px;
-
-    padding: 0;
-    padding-top: 7px;
-
-    font-size: 12px;
     text-align: center;
-    color: #000;
     
 }
-.cabecera-der{
-    flex: 60%;
 
+.redes img{
+    width: 30px;
     height: 30px;
-    width: 350px;
+    margin: 5px;
+}
 
-    padding-top: 3px;
-    padding-left: 60px;
-    padding-bottom: 0;
-    display: none;
+.fraselema p{
+    padding-top: 6px;
+    padding-bottom: 6px;
     text-align: center;
 }
+
+/*SEPARADOR*/
+
 nav{
-    margin-top: 10px;  
-}
-.navegacion{
-    
     display: flex;
-    margin: 10px auto;
-    background:#24ae63;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    background:#140026ce;;
     text-align: center;
-    
-    
+    width: 100%;
+    height: auto; 
+    padding-right: 50px;
+    padding-left: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-texto img{
+    margin: 16px 0;
+    align-items: center;
+    max-width: 500px;
+    background: #140026d5;
+    box-shadow: 7px 13px 37px #9217A4   
+}
+
+nav button{
+    text-align: center;
+    width: 100px;
+    background: #140026d5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 7px 13px 37px #9217A4;
 }
 
 .menu {
-    
-    flex: 60%;
+    align-items: center;
+    text-align: center;
     padding: auto;
-    padding-top: 55px;
-    padding-right: 60px;
+    
 }
 .navegacion ul{
     list-style: none;
-    
-
 }
 .menu > li{
     position: relative;
@@ -103,17 +104,9 @@ nav{
 }
 
 .menu li a:hover{
-    color: #18683c;
+    color: #9217A4;
     transition: all .3s;
 
-}
-.submenu{
-    position: absolute;
-    background: #509221;
-    width: 200%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.3s;
 }
 
 .submenu li a{
@@ -130,36 +123,14 @@ nav{
 
 }
 
-.logo-texto{
-    flex: 20%;
-    padding-left: 30px;
-    padding-top: 10px;
-    text-align: left;
-}
-
-.carrito{
-    flex: 5%;
-    height: 70px;
-    width: 175px;
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 65px;
-    padding-top: 10px;
-    padding-left: 8px;
-    padding-right: 10px;
-    border: 0.2em;
-    border-style: solid;
-    border-color: #FFFFFF;
-    color: #000000;
-    font-size: small;
-}
-
 /*victor*/
+footer{
+    width: 100%;
+    margin-top: 20px;
+}
 .monsa {
-
-background-color: #FFFFFF;
-
-    height: 120px;
+    background-color: #140026d5;
+    margin: auto;
     width: 100%;
 
 }
@@ -177,7 +148,7 @@ text-align: center;
 }
 
 .info-contacto {
-    color: #000;
+    color: white;
 
     font-size: 15px;
     padding-top: 10px;   
@@ -188,15 +159,21 @@ text-align: center;
     text-align: center;
 }
 
-.botoncontactanos {
-    
-    text-align: center;  
-    
-    height: 20px;
-    width: 100%;  
-    
-    padding: auto;
-    padding-top: 10px;   
+.info-contacto a {
+    text-decoration-color: white;
+    color: white;
+}
 
+.contactanos{
+    align-items: center;
+    display:flexbox;
+    width: 150px;
+    background: #140026;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 

@@ -47,8 +47,8 @@ router.get('/seccion-empresas.ejs', (req, res) =>{
     res.render('seccion-empresas')
 })
 
-router.get('/seccion-lavanderia.ejs', (req, res) =>{
-    res.render('seccion-lavanderia')
+router.get('/conocenos.ejs', (req, res) =>{
+    res.render('conocenos')
 })
 
 router.get('/lg_empresa.ejs', (req, res) =>{
@@ -60,7 +60,11 @@ router.get('/SAMSUNG_empresa.ejs', (req, res) =>{
 })
 
 router.get('/LOGIN.ejs', (req, res) =>{
-    res.render('LOGIN')
+    res.render('login')
+})
+
+router.get('/extraerDatosUsuario', (req, res) =>{
+    res.render('extraerDatosUsuario')
 })
 
 /*Agregar info a la BD*/
@@ -88,14 +92,15 @@ router.post('/direccionventa', (req, res) =>{
         }
     })
 })
-
+/**Extraer datos de DB */
 router.post('/extraerDatosUsuario', (req, res) =>{
     client.connect(async (err) =>{
         if (!err){
             const collection =client.db("db_gcp").collection("users")
             collection.find().toArray((err, result)=>{
                 if(!err){
-                    res.send(result)
+                    //res.send(result)
+                    res.render('extraerDatosUsuario', {datos:result})
                 }else{
                 res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
                 }
@@ -105,5 +110,27 @@ router.post('/extraerDatosUsuario', (req, res) =>{
         }
     })
 })
+
+router.post('/extraerDatoDeUnUsuario', (req, res) =>{
+    var nombreLocal = req.body.nombre;
+    client.connect(async (err) =>{
+        if (!err){
+            const collection =client.db("db_gcp").collection("users")
+            collection.find({nombre:{$eq:nombreLocal}}).toArray((err, result)=>{
+                if(!err){
+                    //res.send(result)
+                    res.render('extraerDatosUsuario', {datos:result})
+                }else{
+                res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
+                }
+            })
+        }else{
+            res.send("resultado:[{'respuesta':'Error al conectar a la base de datos'},{'mensaje':" + err +"}]")
+        }
+    })
+})
+
+//GUARDANDO DATOS EN MONGODB
+
 
 module.exports = router;
