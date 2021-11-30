@@ -59,8 +59,8 @@ router.get('/SAMSUNG_empresa.ejs', (req, res) =>{
     res.render('SAMSUNG_empresa')
 })
 
-router.get('/LOGIN.ejs', (req, res) =>{
-    res.render('login')
+router.get('/registro.ejs', (req, res) =>{
+    res.render('registro')
 })
 
 router.get('/extraerDatosUsuario', (req, res) =>{
@@ -77,7 +77,6 @@ router.post('/agregarusuario', (req, res)=>{
         }else{
             res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
         }
-        
     })
 })
 
