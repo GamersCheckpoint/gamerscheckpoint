@@ -15,7 +15,7 @@ aside{
   position: relative;
   list-style: none;
   width: 155px;
-  background-color: #24ae63
+  background-color: #9217A4
 }
 
 .tabla_filtro  li{
@@ -140,7 +140,7 @@ aside{
   text-align: center;
   margin: auto;
   margin-top: 0;
-  background-color: rgb(133, 122, 255);
+  background-color: #9217A4;
 
   overflow: hidden;
 }

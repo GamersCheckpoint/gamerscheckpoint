@@ -25,6 +25,24 @@ router.get('/product04.ejs', (req, res) =>{
     res.render('product04')
 })
 
+router.get('/product05.ejs', (req, res) =>{
+    res.render('product05')
+})
+
+router.get('/product06.ejs', (req, res) =>{
+    res.render('product06')
+})
+
+router.get('/product07.ejs', (req, res) =>{
+    res.render('product07')
+
+})
+
+router.get('/product08.ejs', (req, res) =>{
+    res.render('product08')
+})
+
+
 router.get('/seccion-empresas.ejs', (req, res) =>{
     res.render('seccion-empresas')
 })
@@ -111,5 +129,8 @@ router.post('/extraerDatoDeUnUsuario', (req, res) =>{
         }
     })
 })
+
+//GUARDANDO DATOS EN MONGODB
+
 
 module.exports = router;
