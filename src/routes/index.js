@@ -3,6 +3,18 @@ const fs = require('fs')
 const express = require('express')
 const router = express.Router()
 const client = require('../libs/connectdb')()
+const mongoose = require('mongoose')
+const usuarioSchema = {
+    nombre:String,
+    apellido:String,
+    nacimiento: Date,
+    correo: String,
+    contraseña: String
+
+}
+const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
+
+mongoose.connect("mongodb+srv://jean-rafael:<password>@clustercertus.6mvum.mongodb.net/db_gcp")
 
 /*Llamar a las paginas */
 router.get('/', (req, res) =>{
@@ -68,12 +80,27 @@ router.get('/extraerDatosUsuario', (req, res) =>{
 })
 
 /*Agregar info a la BD*/
-router.post('/agregarusuario', (req, res)=>{
+router.post('/agregarUsuario', (req, res)=>{
+
+    var newUsuario = new usuarioSchema ({
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+        nacimiento: req.body.nacimiento,
+        correo: req.body.correo,
+        password: req.body.password
+    });
+
     client.connect(async (err) =>{
         if(!err){
             const collection = client.db("db_gcp").collection("users")
-        collection.insertOne(req.body)
-        res.send("resultado:[{'respuesta':'OK'}]")
+            collection.insertOne(newUsuario),((err, result)=>{
+                if(!err){
+                    //res.send(result)
+                    res.render('/registro');
+                }else{
+                res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
+                }
+            })
         }else{
             res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
         }
@@ -128,8 +155,6 @@ router.post('/extraerDatoDeUnUsuario', (req, res) =>{
         }
     })
 })
-
-//GUARDANDO DATOS EN MONGODB
 
 
 module.exports = router;
