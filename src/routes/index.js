@@ -5,18 +5,18 @@ const router = express.Router()
 const client = require('../libs/connectdb')()
 const mongoose = require('mongoose')
 
-const usuarioSchema = {
+var usuarioSchema = {
     nombre:String,
     apellido:String,
     nacimiento: Date,
     correo: String,
     contraseña: String
 
-}
+};
+
 const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
 
-mongoose.connect("mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-)
+mongoose.connect("mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useUnifiedTopology: true })
 
 /*Llamar a las paginas */
 router.get('/', (req, res) =>{
@@ -84,25 +84,19 @@ router.get('/extraerDatosUsuario', (req, res) =>{
 /*Agregar info a la BD*/
 router.post('/agregarUsuario', (req, res)=>{
 
-    const newUsuario = {
+    var newUsuario = new usuarioModelo ({
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         nacimiento: req.body.nacimiento,
         correo: req.body.correo,
         password: req.body.password
-    };
-console.log("aquí")
+    });
+
     client.connect(async (err) =>{
         if(!err){
             const collection = client.db("db_gcp").collection("users")
-            collection.insertOne(newUsuario),((err, result)=>{
-                if(!err){
-                    //res.send(result)
-                    res.render('/ndex');
-                }else{
-                res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
-                }
-            })
+            collection.insertOne(req.body)
+            res.render('index')
         }else{
             res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
         }
