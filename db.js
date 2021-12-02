@@ -1,5 +1,5 @@
 const MongoCLient  = require('mongodb').MongoClient
-const uri ="mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri ="mongodb+srv://jean-rafael:eljaja.7@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 let client;
 

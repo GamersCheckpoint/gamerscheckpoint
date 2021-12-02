@@ -4,6 +4,7 @@ const express = require('express')
 const router = express.Router()
 const client = require('../libs/connectdb')()
 const mongoose = require('mongoose')
+
 const usuarioSchema = {
     nombre:String,
     apellido:String,
@@ -14,7 +15,7 @@ const usuarioSchema = {
 }
 const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
 
-mongoose.connect("mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/db_gcp")
+mongoose.connect("mongodb+srv://jean-rafael:eljaja.7@clustercertus.6mvum.mongodb.net/db_gcp")
 
 /*Llamar a las paginas */
 router.get('/', (req, res) =>{
@@ -89,14 +90,14 @@ router.post('/agregarUsuario', (req, res)=>{
         correo: req.body.correo,
         password: req.body.password
     });
-
+console.log("aquí")
     client.connect(async (err) =>{
         if(!err){
             const collection = client.db("db_gcp").collection("users")
             collection.insertOne(newUsuario),((err, result)=>{
                 if(!err){
                     //res.send(result)
-                    res.render('/registro');
+                    res.render('/ndex');
                 }else{
                 res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
                 }
