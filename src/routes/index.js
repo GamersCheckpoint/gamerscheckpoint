@@ -25,7 +25,7 @@ router.get('/', (req, res) =>{
 
 router.get('/', (req, res) =>{
     res.render('index')
-
+})
 router.get('/product01.ejs', (req, res) =>{
     res.render('product01')
 })
