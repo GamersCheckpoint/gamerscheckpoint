@@ -21,7 +21,7 @@
 .slyder ul{
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 500%;
     animation: cambio 20s infinite alternate ease-out;
 }
 
