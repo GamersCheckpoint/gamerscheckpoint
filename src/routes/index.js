@@ -15,7 +15,7 @@ const usuarioSchema = {
 }
 const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
 
-mongoose.connect("mongodb+srv://jean-rafael:eljaja.7@clustercertus.6mvum.mongodb.net/db_gcp")
+mongoose.connect("mongodb+srv://jean-rafael:HwFaGKZewA2lSWSu@clustercertus.6mvum.mongodb.net/db_gcp")
 
 /*Llamar a las paginas */
 router.get('/', (req, res) =>{
@@ -83,13 +83,13 @@ router.get('/extraerDatosUsuario', (req, res) =>{
 /*Agregar info a la BD*/
 router.post('/agregarUsuario', (req, res)=>{
 
-    var newUsuario = new usuarioSchema ({
+    const newUsuario = {
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         nacimiento: req.body.nacimiento,
         correo: req.body.correo,
         password: req.body.password
-    });
+    };
 console.log("aquí")
     client.connect(async (err) =>{
         if(!err){
