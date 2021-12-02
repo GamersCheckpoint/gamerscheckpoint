@@ -9,7 +9,8 @@ const mongoose = require('mongoose')
 
 
 app.set('port', process.env.PORT ||3000)
-mongoose.connect("mongodb+srv://jean-rafael:HwFaGKZewA2lSWSu@clustercertus.6mvum.mongodb.net/db_gcp")
+mongoose.connect("mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+)
 app.set('views', path.join(__dirname, 'src/views'))
 app.set('view engine', 'ejs')
 

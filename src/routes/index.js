@@ -15,7 +15,8 @@ const usuarioSchema = {
 }
 const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
 
-mongoose.connect("mongodb+srv://jean-rafael:HwFaGKZewA2lSWSu@clustercertus.6mvum.mongodb.net/db_gcp")
+mongoose.connect("mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+)
 
 /*Llamar a las paginas */
 router.get('/', (req, res) =>{
