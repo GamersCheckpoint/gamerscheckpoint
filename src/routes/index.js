@@ -22,6 +22,9 @@ router.get('/', (req, res) =>{
     res.render('index')
 })
 
+router.get('/', (req, res) =>{
+    res.render('index')
+
 router.get('/product01.ejs', (req, res) =>{
     res.render('product01')
 })
@@ -48,16 +51,18 @@ router.get('/product06.ejs', (req, res) =>{
 
 router.get('/product07.ejs', (req, res) =>{
     res.render('product07')
-
 })
 
 router.get('/product08.ejs', (req, res) =>{
-    res.render('product08')
+    res.render('product06')
 })
 
+router.get('/catalogo.ejs', (req, res) =>{
+    res.render('catalogo')
+})
 
 router.get('/seccion-empresas.ejs', (req, res) =>{
-    res.render('seccion-empresas')
+    res.rend| er('seccion-empresas')
 })
 
 router.get('/conocenos.ejs', (req, res) =>{
@@ -76,9 +81,10 @@ router.get('/registro.ejs', (req, res) =>{
     res.render('registro')
 })
 
-router.get('/extraerDatosUsuario', (req, res) =>{
+router.get('extraerDatosUsuario', (req, res) =>{
     res.render('extraerDatosUsuario')
 })
+
 
 /*Agregar info a la BD*/
 router.post('/agregarUsuario', (req, res)=>{

@@ -40,7 +40,7 @@
     </div>
     <ul id="" class="menu">
       <li><a href="index.ejs"><b>HOME</b></a></li> |
-      <li><a href="seccion-lavanderia.ejs"><b>LAVADO Y LIMPIEZA</b></a></li> |
+      <li><a href="catalogo.ejs"><b>LAVADO Y LIMPIEZA</b></a></li> |
       <li><a href="#"><b>MARCAS</b></a> 
         <ul class="submenu">
           <li><a href="lg_empresa.EJS">LG</a></li>
@@ -96,17 +96,24 @@
     </div>
   </article>
 </section>
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+  <script>
+      paypal.Buttons({
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              // ...
+              purchase_units: [{
+                  amount: {
+                      value: 20
+                  }
+              }],
+          });
+      }
+  }).render('body');</script>
 
 <section class="accion-compra">
-  <a href="https://wa.me/message/M23MNKYLPLCEF1" style="text-decoration:none;">
-    <button class="accion-comra__boton" style="cursor: pointer">
-      <img src="IMAGEN/whatsapp-logo-png-transparent.png" 
-      alt="whatsapp logo" width="30px">&nbsp;&nbsp;
-      <h2>¡LO QUIERO!</h2>&nbsp;&nbsp;
-      <img src="IMAGEN/whatsapp-logo-png-transparent.png"
-      alt="whatsapp logo" width="30px">
-    </button>
-  </a>
+  
+
 </section>
 
 <section class="O-P">
