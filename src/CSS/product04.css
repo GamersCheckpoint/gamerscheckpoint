@@ -34,13 +34,16 @@ body{
   height: 650px;
 
   background-color: #9217A4;
+  
 }
 
-.rodutoanddescription__img-info__img {
+.produtoanddescription__img-info__img {
   padding: 0;
   margin: 0;
 
-  width: 100%;
+  padding-top: 5%;
+  padding-left: 2%;
+  width: 50%;
   height: 650px;
 }
 
@@ -48,10 +51,11 @@ body{
   padding: 0;
   margin: 0;
   margin-left: 42%;
+
   padding-left: 1%;
-
+  
   background-color: #9217A4;
-
+  
   height: 70px;
   width: 20%;
 
@@ -62,14 +66,15 @@ body{
   margin: 0;
 
   height: 650px;
-  width: 100%;
+  width: 50%;
 }
 
 .produtoanddescription__img-info__info__caracteristicas {
-  padding: 0;
+  padding: 0px;
   margin: 0;
 
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-left: 13%;
 }
 
 .produtoanddescription__img-info__info__caracteristicas h1{
@@ -99,13 +104,13 @@ body{
   padding: 0;
   margin: 0;
 
-  padding-top: 50px;
-  padding-left: 20%;
+
+  padding-left: 19%;
 }
 
 #tabladecap{
   display: block;
-  width: 100%;
+  width: 300px;
   height: 325px;
 }
 
@@ -115,7 +120,7 @@ body{
     border-style: solid;
     border-width: 2px;
     border-color: rgb(134, 130, 130);
-    width: 300px;
+    width: 305px;
     height: min-content;
     padding-bottom: 2px;
     padding-left: 5px;
@@ -127,7 +132,7 @@ body{
   border-left: 5px solid green;
   background-color: yellowgreen;
   display: flex;
-  width: 95%;
+  width: 100%;
   height: min-content;
   margin-bottom: 2px;
   
@@ -137,7 +142,7 @@ body{
   border-left: 5px solid red;
   background-color: tomato;
   display: flex;
-  width: 95%;
+  width: 290px;
   height: min-content;
   margin-bottom: 2px;
 }
@@ -145,7 +150,7 @@ body{
   border-left: 5px solid red;
   background-color: tomato;
   display: flex;
-  width: 95%;
+  width: 100%;
   height: min-content;
   
 }
