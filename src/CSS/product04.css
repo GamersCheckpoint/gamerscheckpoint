@@ -27,14 +27,19 @@ body{
 }
 
 /*primera parte*/
-
+/*cambiar el fondo del produto general*/
 .produtoanddescription__img-info {
   display: flex;
   width: 100%;
   height: 650px;
 
+<<<<<<< HEAD
   background-color: #9217A4;
   
+=======
+  background-color: #995d8a;
+    
+>>>>>>> b2db9ea98920c544d421e96812ae3e9f0354bfb6
 }
 
 .produtoanddescription__img-info__img {
@@ -53,9 +58,15 @@ body{
   margin-left: 42%;
 
   padding-left: 1%;
+<<<<<<< HEAD
   
   background-color: #9217A4;
   
+=======
+
+  background-color:  #995d8a;
+
+>>>>>>> b2db9ea98920c544d421e96812ae3e9f0354bfb6
   height: 70px;
   width: 20%;
 
@@ -78,7 +89,7 @@ body{
 }
 
 .produtoanddescription__img-info__info__caracteristicas h1{
-  color: #BFBEBB;
+  color: #ffffff;
   font-size: 30px;
 
   height: 50px;
@@ -86,13 +97,13 @@ body{
 }
 
 .produtoanddescription__img-info__info__caracteristicas h3 {
-  color: #000;
+  color: rgb(255, 255, 255);
 
   font-size: 25px;
 }
 
 .produtoanddescription__img-info__info__caracteristicas h2 {
-  color: #000;
+  color: rgb(255, 255, 255);
   padding-left: 5%;
   padding-right: 5%;
   font-size: 25px;
@@ -104,8 +115,13 @@ body{
   padding: 0;
   margin: 0;
 
+<<<<<<< HEAD
 
   padding-left: 19%;
+=======
+  padding-top: 0px;
+  padding-left: 20%;
+>>>>>>> b2db9ea98920c544d421e96812ae3e9f0354bfb6
 }
 
 #tabladecap{
@@ -139,7 +155,7 @@ body{
 }
 
 #retiro{
-  border-left: 5px solid red;
+  border-left: 5px solid rgb(253, 44, 8);
   background-color: tomato;
   display: flex;
   width: 290px;
@@ -147,8 +163,8 @@ body{
   margin-bottom: 2px;
 }
 #stock{
-  border-left: 5px solid red;
-  background-color: tomato;
+  border-left: 5px solid rgb(184, 11, 11);
+  background-color: red;
   display: flex;
   width: 100%;
   height: min-content;
@@ -257,12 +273,14 @@ up,p {
   flex-wrap: wrap; 
 }
 /*jean aqui arriba modifique con el flex-warp para cuando se achique la pagina*/
+
+/*modidficar las productos  dentro de otras paginas no del index */
 .bar4x4_1 {
   flex: 5%;
   width: 190px;
   height: 170px;
   
-  background-color: #ffffff;
+  background-color: #ebe2ea;
 
   display: flex;
 
@@ -276,7 +294,7 @@ up,p {
   flex: 5%;
   width: 190px;
   height: 170px;
-  background-color: #ffffff;
+  background-color: #ebe2ea;
 
   display: flex;
 
@@ -290,7 +308,7 @@ up,p {
   flex: 5%;
   width: 190px;
   height: 170px;
-  background-color: #ffffff;
+  background-color: #ebe2ea;
 
   display: flex;
 
@@ -304,7 +322,7 @@ up,p {
   flex: 5%;
   width: 190px;
   height: 170px;
-  background-color: #ffffff;
+  background-color: #ebe2ea;
 
   display: flex;
   
@@ -410,7 +428,7 @@ up,p {
 #contenedor_FT {
   
   margin-bottom: 5px;
-  background-color: #fff;
+  background-color: #b461ce;
   padding-bottom: 10px;
 }
 #contenedor_FT > h1 {
@@ -467,7 +485,7 @@ up,p {
   padding: auto;
   align-items: center;
   padding-bottom: 10px;
-  background-color: #fff;
+  background-color: #b461ce;
   margin-bottom: 30px;
   align-items: center;
   border: #000 solid 1px;
