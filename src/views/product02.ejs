@@ -17,11 +17,11 @@
 <header class="dtop1">
   <div class="cabecera1">
     <div class="cabecera-izq">
-      <img src="IMAGEN/youtube.png" alt="Youtube" width="20px"> &nbsp;
-      <img src="IMAGEN/whatsapp.png" alt="whats App" width="20px">&nbsp;
-      <img src="IMAGEN/facebook.png" alt="FaceBook" width="20px">&nbsp;
-      <img src="IMAGEN/twitter.png" alt="Twitter" width="20px">&nbsp;
-      <img src="IMAGEN/instagram.png" alt="Instagram" width="20px"> 
+      <img src="IMAGEN/iconos/youtube.png" alt="Youtube" width="20px"> &nbsp;
+      <img src="IMAGEN/iconos/whatsapp.png" alt="whats App" width="20px">&nbsp;
+      <img src="IMAGEN/iconos/facebook.png" alt="FaceBook" width="20px">&nbsp;
+      <img src="IMAGEN/iconos/twitter.png" alt="Twitter" width="20px">&nbsp;
+      <img src="IMAGEN/iconos/instagram.png" alt="Instagram" width="20px"> 
     </div>
     <div class="cabecera-centro"> 
       <p>SABEMOS QUE ENCONTRARÁS LO QUE ESTAS BUSCANDO ;)</p>
@@ -36,35 +36,38 @@
   </div>
   <nav id="" class="navegacion">
     <div class="logo-texto">
-      <img src="IMAGEN/LOGO_GCH.png" alt="logo" height="140px" width="280px">
+      <img src="IMAGEN/iconos/LOGO_GCH.png" alt="logo" height="140px" width="280px">
     </div>
     <ul id="" class="menu">
-      <li><a href="index.html"><b>HOME</b></a></li> |
-      <li><a href="sección-lavandería.html"><b>LAVADO Y LIMPIEZA</b></a></li> |
-      <li><a href="#"><b>MARCAS</b></a> 
-        <ul class="submenu">
-          <li><a href="lg_empresa.html">LG</a></li>
-          <li><a href="sección-empresas.html">SAMSUNG</a></li>
-        </ul>
-      </li>
+      <li><a href='/'><b>HOME</b></a></li> |
+      <li><a href="catalogo.ejs"><b>CATÁLOGO</b></a></li> |
+      <li><a href="conocenos.ejs"><b>CONOCENOS</b></a></li>
     </ul>
-  </nav>
+
+</div>
+<div class="login">
+      <div class="cabecera-der">
+          <a href="registro.ejs"><button>Registrate</button></a>
+        
+      </div> 
+</div>
+</nav>
 </header>
 <section class="primerbloque">
   <article class="produtoanddescription">
     <div class="produtoanddescription__img-info">
       <div class="produtoanddescription__img-info__img">
-        <img src="IMAGEN/TECLADO1.gif" alt="Lavadora_17kg" width="600px">
+        <img src="IMAGEN/gif_producto/TECLADO1.gif" alt="Lavadora_17kg" width="600px">
         <figcaption>
-          <p>WD20N8710KV</p>
+          <p>Teclado Razer Tartarus Pro </p>
         </figcaption>
       </div>
       <div class="produtoanddescription__img-info__info">
         <div class="produtoanddescription__img-info__info__caracteristicas">
-        <h1>WD20N8710KV</h1>
-        <h3>Lavaseca AddWash™</h3>
-        <h3>con SmartThings 20 kg / 12 kg</h3>
-        <h2>S/. 3,2709</h2>
+        <h1>Teclado Razer Tartarus Pro </h1>
+        <h3>Analog Optical Gaming Keypad</h3>
+        <h3>negro y blanco </h3>
+        <h2>S/. 530</h2>
       </div>
       <div class="produtoanddescription__img-info__info__entrega">
         <div id="tabladecap">
@@ -72,17 +75,17 @@
             <div>
               <legend>Opciones de Entrega</legend>
               <div id="domicilio">
-                <div><img src="" alt="domicilio"></div>
+                <div><img src="IMAGEN/iconos/iconocasa.png" alt="domicilio"  height="60px" width="60px"></div>
                 <div><h5>DISPONIBLE</h5></div>
                 <div><P>Despacho a domicilio</P></div>
               </div>
               <div id="retiro">
-                <div><img src="" alt="retiro"></div>
+                <div><img src="IMAGEN/iconos/iconotienda.png" alt="retiro"  height="60px" width="60px"></div>
                 <div><h5>NO DISPONIBLE</h5></div>
                 <div><P>Retiro en tienda</P></div>
               </div>
               <div id="stock">
-                <div><img src="" alt="stock"></div>
+                <div><img src="IMAGEN/iconos/iconostock.png" alt="stock"  height="60px" width="60px"></div>
                 <div><h5>NO DISPONIBLE</h5></div>
                 <div><P>Stock en tienda</P></div> 
               </div>
@@ -97,17 +100,22 @@
   </article>
 </section>
 
-<section class="accion-compra">
-  <a href="https://wa.me/message/M23MNKYLPLCEF1" style="text-decoration:none;">
-    <button class="accion-comra__boton" style="cursor: pointer">
-      <img src="IMAGEN/whatsapp-logo-png-transparent.png" 
-      alt="whatsapp logo" width="30px">&nbsp;&nbsp;
-      <h2>¡LO QUIERO!</h2>&nbsp;&nbsp;
-      <img src="IMAGEN/whatsapp-logo-png-transparent.png"
-      alt="whatsapp logo" width="30px">
-    </button>
-  </a>
+
 </section>
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>
+paypal.Buttons({
+createOrder: function(data, actions) {
+return actions.order.create({
+    // ...
+    purchase_units: [{
+        amount: {
+            value: 20
+        }
+    }],
+});
+}
+}).render('body');</script>
 
 <section class="O-P">
   <div class="barhor">
@@ -123,42 +131,46 @@
   <div class="grid">
     <div class="bar4x4_1">
       <div class="favimg2">
-        <a href="product02.html"><img src="IMAGEN/lavadora2.jpg" 
+        <a href="product02.ejs"><img src="IMAGEN/img-productos/Product-02.png" 
         alt="lav1" height="150px" width="150px"></a>
       </div>
       <div class="textin1">
-        <p>Lavaseca<br>AddWash™</p>
-        <p style="font-size: 15px;"><mark>70% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p> 
-      </div>    
+        <a href="product02.ejs"> <h3>Teclado Rezer Tartarus pro</h3> </a>
+          <br>
+          <h1>S/. 530</h1>
+        </div>
     </div>
     <div class="bar4x4_2">
       <div class="favimg4">
-        <a href="product04.html"><img src="IMAGEN/lavadora4.jpg" 
+        <a href="product04.ejs"><img src="IMAGEN/img-productos/Product-04.png" 
         alt="lav2" height="150px" width="150px"></a>
       </div>
       <div class="textin2">
-        <p>Lavadora <br>TurboWash 3D</p>
-        <p style="font-size: 15px;"><mark>50% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p> 
+        <a href="product04.ejs"><h3>Tarjeta de video  Radeon RX6700 xt Gaming</h3></a>
+        <br>
+        <h1>S/.5,190</h1>
       </div>
     </div>
     <div class="bar4x4_3">
       <div class="favimg1">
-        <a href="product01.html"><img src="IMAGEN/lavadora1.jpg" 
+        <a href="product01.ejs"><img src="IMAGEN/img-productos/Product-01.jpg"
         alt="lav3" height="150px" width="150px"></a>
       </div>   
       <div class="textin3">
-        <p>Secadora<br>SensorDry 9kg</p>
-        <p style="font-size: 15px;"><mark>35% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p>
+        <a href="product01.ejs"><h3>Silla gamer Technisport gas clase 2.</h3><h4>celeste y negro</h4></a>
+          <br>
+          <h1>S/. 1,200</h1>
       </div>     
     </div>
     <div class="bar4x4_4">
       <div class="favimg3">
-        <a href="product03.html"><img src="IMAGEN/lavadora3.jpg" 
+        <a href="product03.ejs"><img src="IMAGEN/img-productos/Product-03.png" 
         alt="lav4" height="150px" width="150px"></a>
       </div>
       <div class="textin4">
-        <p>Lavadora<br>Fondo especial</p>
-        <p style="font-size: 15px;"><mark>90% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p>
+        <a href="product03.ejs"><h3>Pop Animado: Dragonball Z - kIND BUU</h3></a>
+         br>
+        <h1>S/. 70</h1>
       </div>
     </div>
   </div>
@@ -176,35 +188,30 @@
       <table id="tablafichat">
         <tr>
           <th id="tablafichat_carac">CARACTERÍSTICAS</th>
-          <td id="tablafichat_carac_desc1">Motor Digital Inverter.<br><br>
-            AddWash. <br><br>
-            SmartThings. 
+          <td id="tablafichat_carac_desc1">TECLADO GAMER.<br>
+            
           </td>
         </tr>
         <tr>
           <th id="tablafichat_esp">ESPECIFICACIONES</th>
           <td id="tablafichat_esp_desc2">
-          Peso 108 kg
-          <br><br>
-          Alto: 686 cm <br>
-          Ancho: 984 cm<br>
-          Profundidad 864 mm
-          <br><br>
-          Potencia : 1500 W<br>
-          Doble carga: No<br>
-          Eficiencia energética : A
-          <br><br>
-          Tipo de panel: LED<br>
-          Cantidad de Programas  : 13
-          <br><br>
-          Consumo de agua 300 (l /año)
+          Switches ópticos analógicos Razer<br>
+          Teclas de doble función<br>
+         Accionamiento regulable<br>
+         32 teclas programables<br>
+         Longitud de macros ilimitada y 8 perfiles de alternancia rápida<br>
           </td>
           
         </tr>
           <tr>
           <th id="tablafichat_list">Funciones destacadas</th>
-          <td id="tablafichat_list_desc3">TurboWash 3D|<br>
-          True Steam|6MotionDD|Smart Diagnosis|Smart ThinQ</td>
+          <td id="tablafichat_list_desc3">Switches ópticos analógicos Razer<br>
+            Teclas de doble función<br>
+            Accionamiento regulable<br>
+            32 teclas programables<br>
+            Longitud de macros ilimitada y 8 perfiles de alternancia rápida
+            <br>
+          </td>
         </tr>
       </table>
     </div>
@@ -214,30 +221,31 @@
       <br>
       <div id="contenedor_tec_sup">
         <!--cambiarlo por un logo con una direccion url-->
-        <a href="http://logok.org/wp-content/uploads/2014/06/LG-logo.png"><img src="/IMAGEN/samsung.jpeg" alt="lg logo" width="70px"></a>
-        <a href="https://www.samsung.com.pe/addwash/" id="contenedor_tec_sup_texto">Conoce más...</a>
+        <a href="https://www.razer.com/"><img src="https://hybrismedianonprods1.blob.core.windows.net/sys-master-phoenix-images-container/h6c/h6b/9559620911134/razer-ths-logo.svg" alt="lg logo" width="70px"></a>
+        <a href="https://www.razer.com/" id="contenedor_tec_sup_texto">Conoce más...</a>
       </div>
       <div id="contenedor_tec_cent">
         <div id="contenedor_tec_cent_1">
-          <img src="IMAGEN/ECOFRIEND.png" alt="ecofriend" height="100px" width="100px">
-          <p>Ecologico</p>
+          <img src="https://assets2.razerzone.com/images/razer-tartarus-pro/analog-optical-switch-actuation.gif" alt="ecofriend" height="100px" width="100px">
+          <p>Switch óptico analógico razer</p>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id="contenedor_tec_cent_2">
-          <img src="IMAGEN/TECNOLOGÍA.png" alt="tecnología" height="100px" width="100px">
-          <p>Tecnología</p>
+          <img src="https://razer01-01-us-east-1-prod-media.s3.amazonaws.com/sys-master/images/h55/h0b/9288347418654/ajustable-actuation.jpg" alt="tecnología" height="100px" width="100px">
+          <p>Accionamiento regulable</p>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id="contenedor_tec_cent_3">
-          <img src="IMAGEN/motor-lg.png" width="100px" height="100px" alt="motor-s" id="contenedor_FT_T_centro_botonS">
-          <p>Motor</p>
+          <img src="https://razer01-01-us-east-1-prod-media.s3.amazonaws.com/sys-master/root/h95/h5a/9288351907870/razer-tartarus-pro-gallery-02.jpg" width="100px" height="100px" alt="motor-s" id="contenedor_FT_T_centro_botonS">
+          <p>Teclas de doble función</p>
         </div>
       </div>
       <div id="contenedor_tec_fin">
         <p id="contenedor_tec_fin_texto">
-        El potente ciclo Hygiene Steam libera vapor desde el fondo del<br>
-        tambor para cubrir cada prenda y dejar tu ropa verdaderamente<br>
-        limpia, eliminando hasta el 99.9% de bacterias y alérgenos*x|.</p>
+          Toma las riendas de tu juego con el Razer Tartarus Pro<br>
+           un teclado para juegos con el que nunca se te escapará la victoria.<br>
+            Gracias a sus pulsaciones calculadas y precisas y a sus 32 teclas programables<br>
+             podrás experimentar un nivel de control y personalización a la altura de los jugadores de MMO más exigentes.</p>
       </div>
     </div>
   </div>
@@ -247,7 +255,7 @@
   <div class="monsa">
     <address>
       <div class="info-contacto">
-          <p>GRUPO 1 , ELECTRO-HOGAR S.A. <br>
+          <p>GRUPO 1 , GAMER'S CHECKPOINT S.A. <br>
           <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">electrohogar@electrohogar.com</a><br>
           Calle Arenas 230 , Villa Humedales - Indonesia <br>
           +62 66518-9214</p>
@@ -259,7 +267,7 @@
   </div>
   <div class="certus">
     <span class="registro">
-    Todos los derechos reservados ELECTRO-HOGAR S.A. 2019
+    Todos los derechos reservadosGAMER'S CHECKPOINT S.A. 2021
     </span>
   </div>
 </footer>
