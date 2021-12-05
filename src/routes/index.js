@@ -23,62 +23,59 @@ router.get('/', (req, res) =>{
     res.render('index')
 })
 
-router.get('/', (req, res) =>{
-    res.render('index')
-})
-router.get('/product01.ejs', (req, res) =>{
+router.get('/product01', (req, res) =>{
     res.render('product01')
 })
 
-router.get('/product02.ejs', (req, res) =>{
+router.get('/product02', (req, res) =>{
     res.render('product02')
 })
 
-router.get('/product03.ejs', (req, res) =>{
+router.get('/product03', (req, res) =>{
     res.render('product03')
 })
 
-router.get('/product04.ejs', (req, res) =>{
+router.get('/product04', (req, res) =>{
     res.render('product04')
 })
 
-router.get('/product05.ejs', (req, res) =>{
+router.get('/product05', (req, res) =>{
     res.render('product05')
 })
 
-router.get('/product06.ejs', (req, res) =>{
+router.get('/product06', (req, res) =>{
     res.render('product06')
 })
 
-router.get('/product07.ejs', (req, res) =>{
+router.get('/product07', (req, res) =>{
     res.render('product07')
 })
 
-router.get('/product08.ejs', (req, res) =>{
+router.get('/product08', (req, res) =>{
     res.render('product06')
 })
 
-router.get('/catalogo.ejs', (req, res) =>{
+router.get('/catalogo', (req, res) =>{
     res.render('catalogo')
 })
 
-router.get('/seccion-empresas.ejs', (req, res) =>{
+router.get('/seccion-empresas', (req, res) =>{
     res.rend| er('seccion-empresas')
 })
 
-router.get('/conocenos.ejs', (req, res) =>{
+router.get('/conocenos', (req, res) =>{
     res.render('conocenos')
 })
 
-router.get('/lg_empresa.ejs', (req, res) =>{
+router.get('/lg_empresa', (req, res) =>{
     res.render('lg_empresa')
 })
 
-router.get('/SAMSUNG_empresa.ejs', (req, res) =>{
+router.get('/SAMSUNG_empresa', (req, res) =>{
     res.render('SAMSUNG_empresa')
 })
 
-router.get('/registro.ejs', (req, res) =>{
+router.get('/registro', (req, res) =>{
     res.render('registro')
 })
 
