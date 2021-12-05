@@ -45,13 +45,13 @@
         <div>
             <ul id="" class="menu">
               <li><a href="/"><b>HOME</b></a></li> |
-              <li><a href="catalogo.ejs"><b>CATÁLOGO</b></a></li> |
-              <li><a href="conocenos.ejs"><b>CONOCENOS</b></a></li>
+              <li><a href="catalogo"><b>CATÁLOGO</b></a></li> |
+              <li><a href="conocenos"><b>CONÓCENOS</b></a></li>
             </ul>
         </div>
         <div class="login">
               <div class="cabecera-der">
-                  <a href="registro.ejs"><button>REGISTRATE</button></a>
+                  <a href="registro"><button>REGÍSTRATE</button></a>
                 
               </div> 
         </div>
@@ -69,6 +69,7 @@
       <div class="produtoanddescription__img-info__info">
         <div class="produtoanddescription__img-info__info__caracteristicas">
         <h1>POLOS GAMER</h1>
+        <h3>SKU# AC38132</h3>
         <h3>Personalizados</h3>
         <h3>Disponible en negro y blanco</h3>
         <h2>S/ 50</h2>
@@ -80,18 +81,15 @@
               <legend>Opciones de Entrega</legend>
               <div id="domicilio">
                 <div><img src="IMAGEN/iconos/iconocasa.png" alt="delivery" height="40px"></div> &nbsp;&nbsp;
-                <div><h5>DISPONIBLE</h5></div> &nbsp;&nbsp;
-                <div><P>Despacho a domicilio</P></div>
+                <div><h5>DESPACHO A DOMICILIO <P>Disponible</P> </h5></div> &nbsp;
               </div>
               <div id="retiro">
-                <div><img src="IMAGEN/iconos/iconotienda.png" width="40px" alt="retiro"></div> &nbsp;&nbsp;
-                <div><h5>NO DISPONIBLE</h5></div> &nbsp;&nbsp;
-                <div><P>Retiro en tienda</P></div>
+                <div><img src="IMAGEN/iconos/iconotienda.png" width="50px" alt="retiro"></div> &nbsp;&nbsp;
+                <div><h5>RETIRO EN TIENDA  <P>No disponible</P> </h5></div> &nbsp;
               </div>
               <div id="stock">
-                <div><img src="IMAGEN/iconos/iconostock.png" width="40px" alt="stock"></div>&nbsp;&nbsp;
-                <div><h5>NO DISPONIBLE</h5></div>&nbsp;&nbsp;
-                <div><P>Stock en tienda</P></div> 
+                <div><img src="IMAGEN/iconos/iconostock.png" width="50px" alt="stock"></div>&nbsp;&nbsp;
+                <div><h5>STOCK EN TIENDA <P>No disponible</P></h5></div>&nbsp;
               </div>
             </div>
           </div>
@@ -104,17 +102,20 @@
   </article>
 </section>
 
-<section class="accion-compra">
-  <a href="https://wa.me/message/M23MNKYLPLCEF1" style="text-decoration:none;">
-    <button class="accion-comra__boton" style="cursor: pointer">
-      <img src="IMAGEN/iconos/whatsapp-logo-png-transparent.png" 
-      alt="whatsapp logo" width="30px">&nbsp;&nbsp;
-      <h2>¡LO QUIERO!</h2>&nbsp;&nbsp;
-      <img src="IMAGEN/iconos/whatsapp-logo-png-transparent.png"
-      alt="whatsapp logo" width="30px">
-    </button>
-  </a>
-</section>
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<script> 
+paypal.Buttons({
+createOrder: function(data, actions) {
+return actions.order.create({
+    // ...
+    purchase_units: [{
+        amount: {
+            value: 20
+        }
+    }],
+});
+}
+}).render('body');</script>
 
 <section class="O-P">
   <div class="barhor">
@@ -130,179 +131,79 @@
   <div class="grid">
     <div class="bar4x4_1">
         <div class="favimg1">
-            <a href="product01.ejs"><img src="IMAGEN/gif_producto/silla.gif" 
+            <a href="product01"><img src="IMAGEN/gif_producto/silla.gif" 
             alt="silla-azul-negro" height="150px" width="150px"></a>
         </div>
         <div class="textin1">
-            <h3>Silla Gamer</h3>
+            <h3>Silla gamer Technisport gas</h3>
             <br>
-            <h1>S/1,200 ♥</h1>
+            <h1>S/.1,200 ♥</h1>
         </div>
     </div>
     <div class="bar4x4_2">
         <div class="favimg2">
-            <a href="product02.ejs"><img src="IMAGEN/gif_producto/TECLADO1.gif" 
+            <a href="product02"><img src="IMAGEN/gif_producto/TECLADO1.gif" 
             alt="teclado" height="150px" width="150px"></a>
         </div>
         <div class="textin2">
-            <h3>Teclado Gamer</h3>
+            <h3>Teclado Razer Tartarus Pro</h3>
             <br>
             <h1>S/.530 ♥</h1>
         </div>
     </div>
     <div class="bar4x4_3">
         <div class="favimg3">
-            <a href="product03.ejs"><img src="IMAGEN/gif_producto/FIGURA1.gif" 
+            <a href="product03"><img src="IMAGEN/gif_producto/FIGURA1.gif" 
             alt="Funko" height="150px" width="150px"></a>
         </div>   
         <div class="textin3">
-            <h3>Funko</h3>
+            <h3>Funko Pop</h3>
             <br>
-            <h1>S/. 70♥</h1>
+            <h1>S/.70 ♥</h1>
         </div>     
     </div>
     <div class="bar4x4_4">
         <div class="favimg4">
-            <a href="product04.ejs"><img src="IMAGEN/gif_producto/TARJETA1.gif" 
+            <a href="product04"><img src="IMAGEN/gif_producto/TARJETA1.gif" 
             alt="tajeta-video1" height="150px" width="150px"></a>
             </div>
             <div class="textin4">
                 <h3>
-                  Tarjeta de video<br> Radeon
+                  Tarjeta de video Radeon RX6700 xt Gaming
                 </h3>
             <br>
             <h1>S/.5,190 ♥</h1>
             </div>
-    </div>
-    <div class="bar4x4_5">
-      <div class="favimg4">
-          <a href="product05.ejs"><img src="IMAGEN/gif_producto/POLO1.gif" 
-          alt="polo" height="150px" width="150px"></a>
-          </div>
-          <div class="textin5">
-              <h3>
-                Tarjeta de video<br> Radeon
-              </h3>
-          <br>
-          <h1>S/.50 ♥</h1>
-          </div>
-  </div>
-  <div class="bar4x4_4">
-    <div class="favimg6">
-        <a href="product06.ejs"><img src="IMAGEN/gif_producto/TARJETA2.gif" 
-        alt="tajeta-video1" height="150px" width="150px"></a>
-        </div>
-        <div class="textin6">
-            <h3>
-              Tarjeta de video Galax Geforce Rtx3090 sg <br> Radeon
-            </h3>
-        <br>
-        <h1>S/.13,200 ♥</h1>
-        </div>
-</section>
-
-<section class="O-P">
-  <div class="barhor">
-      <div class="contenedor2">
-          <p>OFERTAS</p>
-          <ul class="list">
-              <li class="list2">PARA TI</li>
-              <li>FOUR YOU</li>
-              <li>PER A TU</li>
-          </ul>
-      </div>
-  </div>
-  <div class="grid">
-    <div class="bar4x4_1">
-        <div class="favimg1">
-            <a href="product01.ejs"><img src="IMAGEN/gif_producto/silla.gif" 
-            alt="silla-azul-negro" height="150px" width="150px"></a>
-        </div>
-        <div class="textin1">
-            <h3>Silla Gamer</h3>
-            <br>
-            <h1>S/.660 ♥</h1>
-        </div>
-    </div>
-    <div class="bar4x4_2">
-        <div class="favimg2">
-            <a href="product02.ejs"><img src="IMAGEN/gif_producto/TECLADO1.gif" 
-            alt="teclado" height="150px" width="150px"></a>
-        </div>
-        <div class="textin2">
-            <h3>Teclado Gamer</h3>
-            <br>
-            <h1>S/.660 ♥</h1>
-        </div>
-    </div>
-    <div class="bar4x4_3">
-        <div class="favimg3">
-            <a href="product03.ejs"><img src="IMAGEN/gif_producto/SILLA2.gif" 
-            alt="Silla2" height="150px" width="150px"></a>
-        </div>   
-        <div class="textin3">
-            <h3>Silla Gamer</h3>
-            <br>
-            <h1>S/.660 ♥</h1>
-        </div>     
-    </div>
-    <div class="bar4x4_4">
-        <div class="favimg4">
-            <a href="product04.ejs"><img src="IMAGEN/gif_producto/TARJETA1.gif" 
-            alt="tajeta-video1" height="150px" width="150px"></a>
-            </div>
-            <div class="textin4">
-                <h3>
-                  Tarjeta de video<br> Radeon
-                </h3>
-            <br>
-            <h1>S/.660 ♥</h1>
-            </div>
-    </div>
+    </div> 
 </div>
 </section>
 
 <section class="nave_tabs">
   <div class="nav_ventanas">
     <div id="nav_ventanas_menu">
-    <button class="fi-des" data-target="#contenedor_FT">Ficha Técnica</button>
+    <button class="fi-des" data-target="#contenedor_FT">Información General</button>
     <button class="fi-des" data-target="#contenedor_tec">Descripción</button>
     </div>
     <div data-content id="contenedor_FT" class="active">
-      <h1>Ficha Técnica</h1>
+      <h1>Información General</h1>
       <br>
       <table id="tablafichat">
         <tr>
           <th id="tablafichat_carac">CARACTERÍSTICAS</th>
-          <td id="tablafichat_carac_desc1">Figura coleccionable estilizada<br><br>
-            perfecta para cualquier fan de Dragon Ball Z <br><br>
-            Funko POP! ganador del premio Toy of the Year 2017 y People's Choice. 
+          <td id="tablafichat_carac_desc1">Tela tejido de punto jersey 30/1, compactado, 100% algodón. <br>
+            Manga corta.  <br>
+            En cuello redondo o cuello en v. <br>
+            Textura suave.
           </td>
         </tr>
+
         <tr>
-          <th id="tablafichat_esp">ESPECIFICACIONES</th>
+          <th id="tablafichat_esp">TALLAS</th>
           <td id="tablafichat_esp_desc2">
-          Peso: 0.012 onzas
-          <br><br>
-          Alto: 2.5 pulgadas <br>
-          Ancho: 2.5 pulgadas<br>
-          Profundidad 3.75 pulgadas
-          <br><br>
-          Pilas:  1 A (Tipo de pila necesaria)<br>
-          Fecha de lanzamiento: Julio 14, 2019<br>
-          Departamento: Hombre (l/ año)
-          <br><br>
-          Fabricante: Funko<br>
-          Cantidad de Programas  : 12
-          <br><br>
-          Número de modelo del producto: 39703
+            Tenemos una variedad de tallas desde XS hasta XL. <br>
+            <p>* Tallas especiales a pedido previo</p>
+          <br>
           </td>
-          
-        </tr>
-          <tr>
-          <th id="tablafichat_list">Clasificación en los más <br> vendidos de Amazon</th>
-          <td id="tablafichat_list_desc3">nº60,826 en Juguetes y Juegos<br>
-            (Ver el Top 100 en Juguetes y Juegos) </td>
         </tr>
       </table>
     </div>
@@ -312,30 +213,19 @@
       <br>
       <div id="contenedor_tec_sup">
         <!--cambiarlo por un logo con una direccion url-->
-        <a href="https://www.funko.com/"><img src="https://logodownload.org/wp-content/uploads/2019/08/funko-logo-0.png" alt="lg logo" width="70px"></a>
-        <a href="https://www.funko.com/" id="contenedor_tec_sup_texto">Conoce más...</a>
+        <a href="https://articulo.mercadolibre.com.pe/MPE-441890905-polos-personalizados-gamer-video-juegos-_JM?attributes=COLOR_SECONDARY_COLOR%3ATmVncm8%3D&quantity=1"><img src="IMAGEN/marcas/confeccion.png" alt="polo" width="70px"></a>
+        <a href="https://articulo.mercadolibre.com.pe/MPE-441890905-polos-personalizados-gamer-video-juegos-_JM?attributes=COLOR_SECONDARY_COLOR%3ATmVncm8%3D&quantity=1" id="contenedor_tec_sup_texto">Conoce más...</a>
       </div>
-      <div id="contenedor_tec_cent">
-        <div id="contenedor_tec_cent_1">
-          <img src="https://s03.s3c.es/imag/_v0/770x420/0/f/3/Etiqueta-de-energia.jpg" alt="ecofriend" width="200px">
-          <p>Ecologico</p>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div id="contenedor_tec_cent_2">
-          <img src="https://thumbs.dreamstime.com/b/unbreakable-icon-isolated-white-background-your-web-mobile-app-design-133862262.jpg" alt="tecnología" height="100px" width="100px">
-          <p>Resistente</p>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div id="contenedor_tec_cent_3">
-          <img src="http://3.bp.blogspot.com/-QFZ3tfsv1vs/U6Dpex3mRMI/AAAAAAAA6tU/5oncKhFY1YU/s1600/DRAGONBALL_Z_FUNKO.jpg" width="100px" height="100px" alt="motor-s" id="contenedor_FT_T_centro_botonS">
-          <p>Coleccionable</p>
-        </div>
-      </div>
+
       <div id="contenedor_tec_fin">
         <p id="contenedor_tec_fin_texto">
-        Funko Pop sun resistentes para que los niños lo puedan llevar a todos lados sin preocuparse<br>
-        por su fabricación ya que están hechos del mejor vinilo y las mejores pinturas<br>
-        no tóxicas y libres de quimicos dañinos</p>
+          Somos fabricantes de Polos de Algodón textíl de primera calidad; a precios por Mayor. <br>
+          Confeccionamos polos jersey manga corta y manga larga, en una amplia gama de modelos, diseños y colores. <br>
+          Camisetas de calidad adecuados para empresas e instituciones así como para la universidad, viajes, paseos y uso diario.  <br>
+          Ofrecemos un amplio catalogo de Polos jersey de aspecto elegante y muy cómodas.  <br>
+          Camisetas con logo o mensaje, además con variedad de acabados, formas de impresión y colores.  <br>
+          Además desarrollamos modelos nuevos, de acuerdo a su diseño y especificaciones.  <br>
+          También confeccionamos todo tipo de Artículos Publicitarios textiles y Merchandising para Empresas.</p>
       </div>
     </div>
   </div>
@@ -345,9 +235,9 @@
   <div class="monsa">
     <address>
       <div class="info-contacto">
-          <p>GRUPO 1 , ELECTRO-HOGAR S.A. <br>
-          <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">electrohogar@electrohogar.com</a><br>
-          Calle Arenas 230 , Villa Humedales - Indonesia <br>
+          <p>GAMER'S CHECKPOINT S.A.<br>
+          <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">togamersforgamer@gmail.com</a><br>
+          Calle Arenas 230 , Villa Humedales - Perú <br>
           +62 66518-9214</p>
       </div>
       <div class="botoncontactanos">
@@ -357,7 +247,7 @@
   </div>
   <div class="certus">
     <span class="registro">
-    Todos los derechos reservados ELECTRO-HOGAR S.A. 2019
+    Todos los derechos reservados GAMER'S CHECKPOINT S.A. 2021
     </span>
   </div>
 </footer>
