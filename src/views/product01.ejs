@@ -71,23 +71,20 @@
       </div>
       <div class="produtoanddescription__img-info__info__entrega">
         <div id="tabladecap">
-          <div id="tb_cap"  >
-            <div>
+          <div id="tb_cap">
+            <div id="tb_cap_contenedor">
               <legend>Opciones de Entrega</legend>
               <div id="domicilio">
-                <div><img src="IMAGEN/iconos/iconocasa.png" alt="domicilio" height="60px" width="60px"></div><br>
-                <div><h5>DISPONIBLE</h5></div>
-                <div><P>Despacho a domicilio</P></div>
+                <div><img src="IMAGEN/iconos/iconocasa.png" alt="delivery" height="40px"></div> &nbsp;&nbsp;
+                <div><h5>DESPACHO A DOMICILIO <P>Disponible</P> </h5></div> &nbsp;
               </div>
               <div id="retiro">
-                <div><img src="IMAGEN/iconos/iconotienda.png" alt="retiro"  height="60px" width="60px"></div>
-                <div><h5>NO DISPONIBLE</h5></div>
-                <div><P>Retiro en tienda</P></div>
+                <div><img src="IMAGEN/iconos/iconotienda.png" width="50px" alt="retiro"></div> &nbsp;&nbsp;
+                <div><h5>RETIRO EN TIENDA  <P>No disponible</P> </h5></div> &nbsp;
               </div>
               <div id="stock">
-                <div><img src="IMAGEN/iconos/iconostock.png" alt="stock " height="60px" width= "60px"></div>
-                <div><h5>NO DISPONIBLE</h5></div>
-                <div><P>Stock en tienda</P></div> 
+                <div><img src="IMAGEN/iconos/iconostock.png" width="50px" alt="stock"></div>&nbsp;&nbsp;
+                <div><h5>STOCK EN TIENDA <P>No disponible</P></h5></div>&nbsp;
               </div>
             </div>
           </div>
@@ -115,7 +112,20 @@
   }).render('body');</script>
 
 <section class="accion-compra">
-  
+  <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <script>
+      paypal.Buttons({
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              // ...
+              purchase_units: [{
+                  amount: {
+                      value: 20
+                  }
+              }],
+          });
+      }
+  }).render('body');</script> 
 
 </section>
 

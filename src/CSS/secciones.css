@@ -122,6 +122,7 @@ up,p {
     display: flex;
     width: 100%;
     flex-wrap: wrap; 
+    
 }
 /*jean aqui arriba modifique con el flex-warp para cuando se achique la pagina*/
 
@@ -278,7 +279,7 @@ up,p {
 /*EDITAR LA POSICION DEL CONTENEDOR CARRUCEL */
 .CAR{
     height: 300px;
-    width: 1000px;
+    width: 980px;
     margin: auto;
     overflow: hidden;
 }
@@ -293,13 +294,13 @@ up,p {
 
 .CAR li{
     height: 300px;
-    width: 1000px;
+    width: 980px;
     
 }
 
 .CAR img{
     height: 300px;
-    width: 1000px;
+    width: 980px;
 }
 
 @keyframes cambio {
