@@ -52,7 +52,7 @@ router.get('/product07', (req, res) =>{
 })
 
 router.get('/product08', (req, res) =>{
-    res.render('product06')
+    res.render('product08')
 })
 
 router.get('/catalogo', (req, res) =>{
