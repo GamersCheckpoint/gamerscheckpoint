@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="CSS/principal.css">
     <link rel="shortcut icon" href="/src/IMAGEN/ICONO_CP.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/product04.css">
 
     <script src="JS/product01.js" defer></script>
@@ -37,55 +36,55 @@
   </div>
   <nav id="" class="navegacion">
     <div class="logo-texto">
-      <img src="IMAGEN/LOGO_GCH.png" alt="logo" height="140px" width="280px">
+      <img src="IMAGEN/iconos/LOGO_GCH.png" alt="logo" height="140px" width="280px">
     </div>
     <ul id="" class="menu">
-      <li><a href="/"><b>HOME</b></a></li> |
-      <li><a href="sección-lavandería.html"><b>LAVADO Y LIMPIEZA</b></a></li> |
-      <li><a href="#"><b>MARCAS</b></a> 
-        <ul class="submenu">
-          <li><a href="lg_empresa.html">LG</a></li>
-          <li><a href="sección-empresas.html">SAMSUNG</a></li>
-        </ul>
-      </li>
+      <li><a href='/'><b>HOME</b></a></li> |
+      <li><a href="catalogo"><b>CATÁLOGO</b></a></li> |
+      <li><a href="conocenos"><b>CONOCENOS</b></a></li>
     </ul>
-  </nav>
+
+</div>
+<div class="login">
+      <div class="cabecera-der">
+          <a href="registro"><button>Registrate</button></a>
+        
+      </div> 
+</div>
+</nav>
 </header>
 <section class="primerbloque">
   <article class="produtoanddescription">
     <div class="produtoanddescription__img-info">
       <div class="produtoanddescription__img-info__img">
-        <img src="IMAGEN/SILLA2.gif" alt="Lavadora_17kg" width="600px">
+        <img src="IMAGEN/gif_producto/SILLA2.gif" alt="Silla2" width="600px">
         <figcaption>
-          <p>LG WT19BSS6H</p>
+          <p>SILLA GAMER DXRacer</p>
         </figcaption>
       </div>
       <div class="produtoanddescription__img-info__info">
         <div class="produtoanddescription__img-info__info__caracteristicas">
-        <h1>WT19BSS6H</h1>
-        <h3>Lavadora de 19 kg carga superior TurboWash 3D</h3>
-        <h3>6MotionDD, Steam y conectividad Wi-Fi</h3>
-        <h2>S/. 1,999</h2>
+        <h1>Silla gamer DXRacer P Series,</h1>
+        <h3>gas lift clase 4, tapiz pu,</h3>
+        <h3>máx. 120 kg, negro y rojo</h3>
+        <h2>S/. 899.00</h2>
       </div>
       <div class="produtoanddescription__img-info__info__entrega">
         <div id="tabladecap">
-          <div id="tb_cap"  >
-            <div>
+          <div id="tb_cap">
+            <div id="tb_cap_contenedor">
               <legend>Opciones de Entrega</legend>
               <div id="domicilio">
-                <div><img src="" alt="domicilio"></div>
-                <div><h5>DISPONIBLE</h5></div>
-                <div><P>Despacho a domicilio</P></div>
+                <div><img src="IMAGEN/iconos/iconocasa.png" alt="delivery" height="40px"></div> &nbsp;&nbsp;
+                <div><h5>DESPACHO A DOMICILIO <P>Disponible</P> </h5></div> &nbsp;
               </div>
               <div id="retiro">
-                <div><img src="" alt="retiro"></div>
-                <div><h5>NO DISPONIBLE</h5></div>
-                <div><P>Retiro en tienda</P></div>
+                <div><img src="IMAGEN/iconos/iconotienda.png" width="50px" alt="retiro"></div> &nbsp;&nbsp;
+                <div><h5>RETIRO EN TIENDA  <P>No disponible</P> </h5></div> &nbsp;
               </div>
               <div id="stock">
-                <div><img src="" alt="stock"></div>
-                <div><h5>NO DISPONIBLE</h5></div>
-                <div><P>Stock en tienda</P></div> 
+                <div><img src="IMAGEN/iconos/iconostock.png" width="50px" alt="stock"></div>&nbsp;&nbsp;
+                <div><h5>STOCK EN TIENDA <P>No disponible</P></h5></div>&nbsp;
               </div>
             </div>
           </div>
@@ -97,17 +96,37 @@
     </div>
   </article>
 </section>
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <script>
+      paypal.Buttons({
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              // ...
+              purchase_units: [{
+                  amount: {
+                      value: 20
+                  }
+              }],
+          });
+      }
+  }).render('body');</script>
 
 <section class="accion-compra">
-  <a href="https://wa.me/message/M23MNKYLPLCEF1" style="text-decoration:none;">
-    <button class="accion-comra__boton" style="cursor: pointer">
-      <img src="IMAGEN/whatsapp-logo-png-transparent.png" 
-      alt="whatsapp logo" width="30px">&nbsp;&nbsp;
-      <h2>¡LO QUIERO!</h2>&nbsp;&nbsp;
-      <img src="IMAGEN/whatsapp-logo-png-transparent.png"
-      alt="whatsapp logo" width="30px">
-    </button>
-  </a>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <script>
+      paypal.Buttons({
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              // ...
+              purchase_units: [{
+                  amount: {
+                      value: 20
+                  }
+              }],
+          });
+      }
+  }).render('body');</script> 
+
 </section>
 
 <section class="O-P">
@@ -124,42 +143,46 @@
   <div class="grid">
     <div class="bar4x4_1">
       <div class="favimg2">
-        <a href="product02.html"><img src="IMAGEN/lavadora2.jpg" 
+        <a href="product02"><img src="IMAGEN/img-productos/Product-02.png" 
         alt="lav1" height="150px" width="150px"></a>
       </div>
       <div class="textin1">
-        <p>Lavaseca<br>AddWash™</p>
-        <p style="font-size: 15px;"><mark>70% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p> 
+        <a href="product02"> <h3>Teclado Rezer Tartarus pro</h3> </a>
+        <br>
+        <h1>S/. 530</h1>
       </div>    
     </div>
     <div class="bar4x4_2">
       <div class="favimg4">
-        <a href="product04.html"><img src="IMAGEN/lavadora4.jpg" 
+        <a href="product04"><img src="IMAGEN/img-productos/Product-04.png" 
         alt="lav2" height="150px" width="150px"></a>
       </div>
       <div class="textin2">
-        <p>Lavadora <br>TurboWash 3D</p>
-        <p style="font-size: 15px;"><mark>50% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p> 
+        <a href="product04"> <h3>Tarjeta de video  Radeon RX6700 xt Gaming</h3></a>
+          <br>
+          <h1>S/.5,190</h1>
       </div>
     </div>
     <div class="bar4x4_3">
       <div class="favimg1">
-        <a href="product01.html"><img src="IMAGEN/lavadora1.jpg" 
+        <a href="product08"><img src="IMAGEN/img-productos/FIGURA2.1.png" 
         alt="lav3" height="150px" width="150px"></a>
       </div>   
       <div class="textin3">
-        <p>Secadora<br>SensorDry 9kg</p>
-        <p style="font-size: 15px;"><mark>35% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p>
+        <a href="product08"><h3>Figura De Super Mario Odyssey Con Cappy</h3></a>
+        <br>
+    <h1>S/. 60.00</h1>
       </div>     
     </div>
     <div class="bar4x4_4">
       <div class="favimg3">
-        <a href="product03.html"><img src="IMAGEN/lavadora3.jpg" 
+        <a href="product03"><img src="IMAGEN/img-productos/Product-03.png" 
         alt="lav4" height="150px" width="150px"></a>
       </div>
       <div class="textin4">
-        <p>Lavadora<br>Fondo especial</p>
-        <p style="font-size: 15px;"><mark>90% Off</mark> &nbsp;&nbsp; &nbsp;&nbsp;</p>
+        <a href="product03"><h3>Pop Animado: Dragonball Z - kIND BUU</h3></a>
+        <br>
+    <h1>S/. 70</h1>
       </div>
     </div>
   </div>
@@ -177,35 +200,39 @@
       <table id="tablafichat">
         <tr>
           <th id="tablafichat_carac">CARACTERÍSTICAS</th>
-          <td id="tablafichat_carac_desc1">Tecnología TurboWash 3D.<br><br>
-            Steam Lavado a vapor. <br><br>
-            Limpieza Automática. 
+          <td id="tablafichat_carac_desc1">Silla gamer DXRacer P Series<br>
+            La combinación de colores entre negro y rojo es perfecta <br>
+            diseño elegante pero audaz. 
           </td>
         </tr>
         <tr>
           <th id="tablafichat_esp">ESPECIFICACIONES</th>
           <td id="tablafichat_esp_desc2">
-          Peso 49 kg
-          <br><br>
-          Alto: 102cm <br>
-          Ancho: 63.2 cm<br>
-          Profundidad 67 cm
-          <br><br>
-          Potencia : 1500 W<br>
-          Doble carga: No<br>
-          Eficiencia energética : A
-          <br><br>
-          Tipo de panel: digital<br>
-          Cantidad de Programas  : 12
-          <br><br>
-          Consumo de agua 230
+            Material del tapiz: PU<br>
+            Ancho del asiento: 49 cm<br>
+            Altura del respaldo: 84 cm<br>
+            Material del relleno: Espuma moldeadora de alta densidad<br>
+            Ángulo de inclinación ajustable: 90° a 135°<br>
+            Almohadillas: 2 cojínes (cabecera y columna)<br>
+            Ruedas: 5<br>
+            Posa brazos: 2D - Arriba y abajo<br>
+            Sistema de elevación de gas: Clase-4 Gaslift<br>
+            Capacidad de carga máxima: 120 kg<br>
+            Material de la base: Barra de color de 5 estrellas<br>
+            Garantía: 2 años (solo en partes que no cubre el cuero PU)<br>
           </td>
           
         </tr>
-          <tr>
-          <th id="tablafichat_list">Funciones destacadas</th>
-          <td id="tablafichat_list_desc3">Motor Inverter Direct Drive|TurboWash 3D|<br>
-          True Steam|6MotionDD|Smart Diagnosis|Smart ThinQ</td>
+        <tr>
+          <th id="tablafichat_list">Lista de opciones</th>
+          <td id="tablafichat_list_desc3">Technisport te trae la comodidad que necesitas para pasar largas horas frente a tus videojuegos <br> 
+            favoritos o sesiones de trabajo frente a la computadora.  <br>
+            Cuenta con un mecanismo regulable de altura con gas revestido clase II y <br>
+            Apoya Brazos con cojín suave en material PU regulable
+          
+          
+            <br>
+          </td>
         </tr>
       </table>
     </div>
@@ -215,30 +242,33 @@
       <br>
       <div id="contenedor_tec_sup">
         <!--cambiarlo por un logo con una direccion url-->
-        <a href="http://logok.org/wp-content/uploads/2014/06/LG-logo.png"><img src="/IMAGEN/LG-Logotipo-1995-2014.png" alt="lg logo" width="70px"></a>
-        <a href="https://www.lg.com/pe/lavadoras/lg-WT19BSS6H" id="contenedor_tec_sup_texto">Conoce más...</a>
+        <a href="https://www.dxracer.com/"><img src="IMAGEN/marcas/DxRacerLogo.png" alt="DxRacer logo" width="140px"></a>
+        <a href="https://www.dxracer.com/" 
+        id="contenedor_tec_sup_texto">Conoce más...</a>
       </div>
       <div id="contenedor_tec_cent">
         <div id="contenedor_tec_cent_1">
-          <img src="IMAGEN/ECOFRIEND.png" alt="ecofriend" height="100px" width="100px">
-          <p>Ecologico</p>
+          <img src="https://www.ofisillas.es/blog/wp-content/uploads/2015/12/Posturas-silla.jpg" alt="ecofriend" height="100px" width="100px">
+          <p>Buena postura</p>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id="contenedor_tec_cent_2">
-          <img src="IMAGEN/TECNOLOGÍA.png" alt="tecnología" height="100px" width="100px">
-          <p>Tecnología</p>
+          <img src="https://www.nsmotorsport.es/26126-large_default/sparco.jpg" alt="tecnología" height="100px" width="100px">
+          <p>Facil movilidad</p>
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id="contenedor_tec_cent_3">
-          <img src="IMAGEN/motor-lg.png" width="100px" height="100px" alt="motor-s" id="contenedor_FT_T_centro_botonS">
-          <p>Motor</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF856wh7AjMEqP4HiJsa3TxGuqcAKq-Z7ODw&usqp=CAU" width="100px" height="100px" alt="motor-s" id="contenedor_FT_T_centro_botonS">
+          <p>Inclinación de 180°</p>
         </div>
       </div>
       <div id="contenedor_tec_fin">
         <p id="contenedor_tec_fin_texto">
-        WaveForce™ y JetSpray generan ondas poderosas para mejorar el lavado y enjuague.<br>
-        Combinado con el nuevo TurboDrum™, que gira en sentido inverso, TurboWash3D™ lava<br>
-        la ropa en todas las direcciones posibles para una limpieza total.</p>
+          -Acabado con estilo de carreras: Construido con el cuero preferido por los asientos de carreras.<br>
+          -Respaldar ajustable: soporte de ángulo perfecto desde 90 ° hasta 135 ° para satisfacer todas sus necesidades.<br>
+          -Ruedas de pu anti arañazos: Las ruedas con revestimiento de PU están diseñadas para un funcionamiento más silencioso y una mayor resistencia.<br>
+          -Diseñado para la comodidad: Con almohadas ajustables para el cuello y la zona lumbar, comodidad ergonómica y apoyo diseñado para las áreas importantes de su cuerpo.<br>
+        </p>
       </div>
     </div>
   </div>
@@ -248,7 +278,7 @@
   <div class="monsa">
     <address>
       <div class="info-contacto">
-          <p>GRUPO 1 , ELECTRO-HOGAR S.A. <br>
+          <p> GAMER'S CHECKPOINT S.A. <br>
           <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">electrohogar@electrohogar.com</a><br>
           Calle Arenas 230 , Villa Humedales - Indonesia <br>
           +62 66518-9214</p>
@@ -260,7 +290,7 @@
   </div>
   <div class="certus">
     <span class="registro">
-    Todos los derechos reservados ELECTRO-HOGAR S.A. 2019
+    Todos los derechos reservados GAMER'S CHECKPOINT S.A. 2021
     </span>
   </div>
 </footer>
