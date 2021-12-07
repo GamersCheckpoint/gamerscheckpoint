@@ -97,7 +97,7 @@ router.post('/agregarUsuario', (req, res)=>{
 
     client.connect(async (err) =>{
         if(!err){
-            const collection = client.db("db_gcp").collection("users")
+            const collection = client.db("db_gcp").collection("usersPromo")
             collection.insertOne(req.body)
             res.render('index')
         }else{
@@ -121,7 +121,7 @@ router.post('/direccionventa', (req, res) =>{
 router.post('/extraerDatosUsuario', (req, res) =>{
     client.connect(async (err) =>{
         if (!err){
-            const collection =client.db("db_gcp").collection("users")
+            const collection =client.db("db_gcp").collection("usersPromo")
             collection.find().toArray((err, result)=>{
                 if(!err){
                     //res.send(result)
@@ -140,7 +140,7 @@ router.post('/extraerDatoDeUnUsuario', (req, res) =>{
     var nombreLocal = req.body.nombre;
     client.connect(async (err) =>{
         if (!err){
-            const collection =client.db("db_gcp").collection("users")
+            const collection =client.db("db_gcp").collection("usersPromo")
             collection.find({nombre:{$eq:nombreLocal}}).toArray((err, result)=>{
                 if(!err){
                     //res.send(result)
