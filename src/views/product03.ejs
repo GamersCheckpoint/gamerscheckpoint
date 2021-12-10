@@ -101,21 +101,22 @@
     </div>
   </article>
 </section>
-
-<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<script>
-paypal.Buttons({
-createOrder: function(data, actions) {
-return actions.order.create({
-    // ...
-    purchase_units: [{
-        amount: {
-            value: 20
-        }
-    }],
-});
-}
-}).render('body');</script>
+<section class="accion-compra">
+  <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <script>
+  paypal.Buttons({
+  createOrder: function(data, actions) {
+  return actions.order.create({
+      // ...
+      purchase_units: [{
+          amount: {
+              value: 20
+          }
+      }],
+  });
+  }
+  }).render('body');</script>
+</section>
 
 <section class="O-P">
   <div class="barhor">

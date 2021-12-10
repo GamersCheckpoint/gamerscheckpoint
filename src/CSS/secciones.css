@@ -5,8 +5,8 @@
 
 /*Pagina index.ejs*/
 .slyder{
-    height: 600px;
-    width: 1500px;
+    /*height: 600px;width: 1500px;*/
+    width: 95%;
     margin: auto;
     overflow: hidden;
 }
@@ -15,19 +15,19 @@
 .slyder ul{
     display: flex;
     padding: 0;
-    width: 10%;
+    width: 500%;
     animation: cambio 19s infinite alternate ease-out;
 }
 
 .slyderli{
-    height: 600px;
-    width: 1500px;
-    
+    height: 100%;
+    /*width: 1500px;*/
+    list-style: none;
 }
 
 .slyder img{
-    height: 600px;
-    width: 1500px;
+    /*height: 600px;*/
+    width: 100%;
 }
 
 @keyframes cambio {

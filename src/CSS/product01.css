@@ -328,3 +328,20 @@ up,p {
   padding-right: 30px;
 
 }
+
+
+/*CSS PARA PAYPAL*/
+
+.accion-compra {
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
+  width: 40%;
+}
+script{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  align-items: center;
+}
