@@ -125,7 +125,7 @@ router.post('/extraerDatosUsuario', (req, res) =>{
             collection.find().toArray((err, result)=>{
                 if(!err){
                     //res.send(result)
-                    res.render('extraerDatosUsuario', {datos:result})
+                    res.render('registro', {datos:result})
                 }else{
                 res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
                 }

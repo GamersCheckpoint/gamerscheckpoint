@@ -30,27 +30,27 @@
     <br>
     <section>
         <h4></h4>
-        <form action="/agregarUsuario" method="post" class="form-busqueda">
-            <h4>BUSCA  TU PEDIDO </h4>
+        <form action="/extraerDatosUsuario" method="post" class="form-busqueda">
+            <h4>BUSCA  TU PEDIDO</h4>
             <form>
                 <div class="mb-3">
-                  <label for="codigo" class="form-label">ingresa tu codigo  de verificacion </label>
-                  <input type="codigo" class="form-control" id="codigo" aria-describedby="codigo">
-                  
+                <label for="codigo" class="form-label">Tngresa tu código  de pedido</label>
+                <input type="codigo" class="form-control" id="codigo" aria-describedby="codigo" aria-placeholder="Ingresa tu código">
+                <div class="mb-3 form-check">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
                 </div>
                 <div class="textarea">
-
-                    <textarea name="textarea" rows="10"  cols="40" style="background-color:#000032; color:#ffff" >se mostra la informacion buscada </textarea>
-                   
-                   
                     
+                    <% if(typeof datos !== 'undefined'){ %>
+                        <% for (index in datos){ %>
+                            <h2>PEDIDO DE <%= datos[index].nombre %> <%= datos[index].apellido %></h2>
+                            <li><p>Fecha de Nacimiento (dd/mm/aaaa): <%= datos[index].nacimiento %></p></li>
+                            <li><p>Sexo F/M: <%= datos[index].sexo %></p></li>
+                            <li><p>Correo Electrónico: <%= datos[index].correo %></p></li>
+                        <% } %>
+                    <% } %>
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-             
         </form>
     </section>
 </div>
