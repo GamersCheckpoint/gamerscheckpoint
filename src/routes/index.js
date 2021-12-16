@@ -15,8 +15,18 @@ var usuarioSchema = {
 
 };
 
-const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
+var consultaSchema = {
+    nombre:String,
+    apellido:String,
+    dni: String,
+    correo: String,
+    producto: String,
+    direccion: String
 
+};
+
+const usuarioModelo = mongoose.model("usuarioModelo", usuarioSchema);
+const consultaModelo = mongoose.model("consultaModelo", consultaSchema);
 mongoose.connect("mongodb+srv://jean-rafael:pancakesdeavena.666@clustercertus.6mvum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useUnifiedTopology: true })
 
 /*Llamar a las paginas */
@@ -95,6 +105,24 @@ router.post('/agregarUsuario', (req, res)=>{
         correo: req.body.correo,
         producto: req.body.producto,
         direccion: req.body.direccion
+    });
+
+    client.connect(async (err) =>{
+        if(!err){
+            const collection = client.db("db_gcp").collection("usersPromo")
+            collection.insertOne(req.body)
+        }else{
+            res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
+        }
+    })
+})
+router.post('/agregarConsulta', (req, res)=>{
+
+    var newUConsult = new consultaModelo ({
+        nombre: req.body.nombre,
+        correo: req.body.correo,
+        asunto: req.body.asunto,
+        opiniones: req.body.opiniones,
     });
 
     client.connect(async (err) =>{
