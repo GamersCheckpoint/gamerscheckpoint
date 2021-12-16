@@ -6,7 +6,7 @@
 /*Pagina index.ejs*/
 .slyder{
     /*height: 600px;width: 1500px;*/
-    width: 95%;
+    width:77%;  /* NO TOCARRRRR GRRRRR*/
     margin: auto;
     overflow: hidden;
 }
@@ -15,11 +15,11 @@
 .slyder ul{
     display: flex;
     padding: 0;
-    width: 500%;
-    animation: cambio 19s infinite alternate ease-out;
+    width:550%;
+    animation: cambio 25s infinite alternate ease-out;
 }
 
-.slyderli{
+.slyder li{
     height: 100%;
     /*width: 1500px;*/
     list-style: none;
