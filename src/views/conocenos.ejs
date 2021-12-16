@@ -84,53 +84,51 @@
 </header>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0" nonce="JRki7fNq"></script>
-    <article class="empresas">
-        <div class="multimedia">
-            
-            <div>
-                <h1>SOY UNA CITA ORIGINAL</h1>
-            </div>
+<article class="empresas">
+    <div class="multimedia">
+        
+        <div>
+            <h1>De Gamers Para Gamers</h1>
         </div>
-        <div class="sugerencia">
-            <div>
-                <h3><B>MISIÓN</B></h3>
-                <p>El obejitivo de nuestro e-commerce es dedicar una atención personalizada, brindando
-                    productos y accesorios de buena calidad a un precio razanoble para los gamers.</p>
-            </div>
-            <div>
-                <h3><b>VISIÓN</b></h3>
-                <p>
-                    Creemos que existimos para brindar excelentes productos y enfocarnos en la innovación
-                    desde lo más simple a lo más complejo. Fijando como meta traspasar fronteras y competir
-                    con el mercado internacional.
-                </p>
-            </div>
-            <br><br>
+    </div>
+    <div class="sugerencia">
+        <div>
+            <h3><B>MISIÓN</B></h3>
+            <p>El obejitivo de nuestro e-commerce es dedicar una atención personalizada, brindando
+                productos y accesorios de buena calidad a un precio razanoble para los gamers.</p>
         </div>
-        <div class="opiniones" onload="javascript:cargarInicio()">
-            <br><br><br>
-            <h1>CONTÁCTAME</h1>
-            <br><br>
-            <i>500 Terry Francois Street, San Francisco, CA 94158 <br> info@mysite.com | Tel: 123-456-7890</i>
-            <br><br><br>
-            <form action="" id="MiComentario">
-                <label for="nombre opiniones"></label>
-                <br>
-                <input type="text" value="Nombre" name="nombre" id="nombre"><br>
-                <br>
-                <input type="text" value="Email" name="nombre" id="nombre"><br>
-                <br>
-                <input type="text" value="Asunto" name="nombre" id="nombre"><br>
-                <br>
-                <textarea name="opiniones" id="opiniones" name="Escribe tu mensaje aqui ..." cols="45%" rows="5"></textarea><br>
-            </form>
+        <div>
+            <h3><b>VISIÓN</b></h3>
+            <p>
+                Creemos que existimos para brindar excelentes productos y enfocarnos en la innovación
+                desde lo más simple a lo más complejo. Fijando como meta traspasar fronteras y competir
+                con el mercado internacional.
+            </p>
+        </div>
+        <br><br>
+    </div>
+    <div class="opiniones" onload="javascript:cargarInicio()">
+        <br><br><br>
+        <h1>CONTÁCTAME</h1>
+        <br><br>
+        <i>500 Terry Francois Street, San Francisco, CA 94158 <br> info@mysite.com | Tel: 123-456-7890</i>
+        <br><br><br>
+        <form action="agregarConsulta" id="MiComentario">
+            <label for="nombre opiniones"></label>
             <br>
-            <div >
-             <button class="boton_subir" type="submit" value="Enviar">Enviar</button>
-            </div>
+            <input type="text" placeholder="Nombres" name="nombre" id="nombre" required><br>
             <br>
-        </div>
-    </article>
+            <input type="text" placeholder="Correo Electrónico" name="email" id="email" required><br>
+            <br>
+            <input type="text" placeholder="Asunto" name="asunto" id="asunto" required><br>
+            <br>
+            <textarea name="opiniones" id="opiniones" name="opiniones" placeholder="Escribe tu consulta o duda aquí..." cols="45%" rows="5" required></textarea><br>
+            <br><br>            
+            <button class="boton_subir" type="submit" value="Enviar">Enviar</button>
+        </form>
+        <br>
+    </div>
+</article>
 
 <footer>
     <div class="monsa">
