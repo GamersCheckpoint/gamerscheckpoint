@@ -24,10 +24,10 @@ body{
     justify-content: space-evenly;
     margin: auto;
     margin-bottom: 5px;
-    padding-top: 15px;
+    padding-top: 9px;
 
     text-align: center;
-    
+    background-color: #fff;
 }
 
 .redes img{
@@ -169,12 +169,11 @@ text-align: center;
     align-items: center;
     display:flexbox;
     width: 150px;
-    background: #140026;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
-    margin-left: 35%;
+    margin-left: 45%;
     margin-right: 35%;
     text-decoration: none;
 }
