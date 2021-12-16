@@ -8,9 +8,10 @@ const mongoose = require('mongoose')
 var usuarioSchema = {
     nombre:String,
     apellido:String,
-    nacimiento: Date,
+    dni: String,
     correo: String,
-    contraseña: String
+    producto: String,
+    direccion: String
 
 };
 
@@ -90,16 +91,16 @@ router.post('/agregarUsuario', (req, res)=>{
     var newUsuario = new usuarioModelo ({
         nombre: req.body.nombre,
         apellido: req.body.apellido,
-        nacimiento: req.body.nacimiento,
+        dni: req.body.dni,
         correo: req.body.correo,
-        password: req.body.password
+        producto: req.body.producto,
+        direccion: req.body.direccion
     });
 
     client.connect(async (err) =>{
         if(!err){
             const collection = client.db("db_gcp").collection("usersPromo")
             collection.insertOne(req.body)
-            res.render('index')
         }else{
             res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
         }
@@ -137,14 +138,14 @@ router.post('/extraerDatosUsuario', (req, res) =>{
 })
 
 router.post('/extraerDatoDeUnUsuario', (req, res) =>{
-    var nombreLocal = req.body.nombre;
+    var dniLocal = req.body.dni;
     client.connect(async (err) =>{
         if (!err){
             const collection =client.db("db_gcp").collection("usersPromo")
-            collection.find({nombre:{$eq:nombreLocal}}).toArray((err, result)=>{
+            collection.find({nombre:{$eq:dniLocal}}).toArray((err, result)=>{
                 if(!err){
                     //res.send(result)
-                    res.render('extraerDatosUsuario', {datos:result})
+                    res.render('registro', {datos:result})
                 }else{
                 res.send("'resultado':[{'respuesta':'Erros al traer la data'},{'mensaje':" + err +"}]")
                 }
