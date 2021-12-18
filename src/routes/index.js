@@ -135,17 +135,7 @@ router.post('/agregarConsulta', (req, res)=>{
     })
 })
 
-router.post('/direccionventa', (req, res) =>{
-    client.connect(async (err) =>{
-        if(!err){
-        const collection = client.db("db_gcp").collection("ventadirec")
-        collection.insertOne(req.body)
-        res.send("resultado:[{'respuesta':'OK'}]")
-        }else{
-            res.send("resultado:[{'respuesta':'Error al cargar'},{'mensaje':" + err +"}]")
-        }
-    })
-})
+
 /**Extraer datos de DB */
 router.post('/extraerDatosUsuario', (req, res) =>{
     client.connect(async (err) =>{
